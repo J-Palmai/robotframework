@@ -1,668 +1,239 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.4.1 (Python 3.13.5 on win32)" generated="2026-03-16T09:23:02.062207" rpa="false" schemaversion="5">
-<suite id="s1" name="Robotframework" source="C:\Users\PalmaiJanos\Documents\GitHub\robotframework">
-<suite id="s1-s1" name="Bejelentkezes" source="C:\Users\PalmaiJanos\Documents\GitHub\robotframework\bejelentkezes.robot">
-<test id="s1-s1-t1" name="Bejelentkezés érvényes adatokkal" line="5">
+<robot generator="Robot 7.4.1 (Python 3.13.5 on win32)" generated="2026-03-16T09:27:48.731626" rpa="false" schemaversion="5">
+<suite id="s1" name="Bejelentkezes" source="C:\Users\PalmaiJanos\Documents\GitHub\robotframework\bejelentkezes.robot">
+<test id="s1-t1" name="Bejelentkezés érvényes adatokkal" line="7">
+<kw name="Open Browser And Load Page" owner="common" type="SETUP">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2026-03-16T09:27:49.019176" level="INFO">Opening browser 'chrome' to base url 'https://demo.testim.io'.</msg>
+<arg>${URL}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2026-03-16T09:27:49.018801" elapsed="1.140747"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2026-03-16T09:27:50.159834" elapsed="0.034954"/>
+</kw>
+<kw name="Wait Until Page Contains" owner="SeleniumLibrary">
+<arg>Space &amp; Beyond</arg>
+<arg>10s</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" start="2026-03-16T09:27:50.195043" elapsed="0.036774"/>
+</kw>
+<status status="PASS" start="2026-03-16T09:27:49.017914" elapsed="1.214112"/>
+</kw>
 <kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
-<msg time="2026-03-16T09:23:02.360738" level="INFO">Cannot capture screenshot because no browser is open.</msg>
-<msg time="2026-03-16T09:23:02.361002" level="FAIL">No browser is open.</msg>
+<msg time="2026-03-16T09:27:51.763453" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=146.0.7680.80)
+Stacktrace:
+	chromedriver!GetHandleVerifier [0x7ff7625210a5+14cc5]
+	chromedriver!GetHandleVerifier [0x7ff762521110+14d30]
+	chromedriver!(No symbol) [0x7ff76228db6d]
+	chromedriver!(No symbol) [0x7ff762264352]
+	chromedriver!(No symbol) [0x7ff762317256]
+	chromedriver!(No symbol) [0x7ff762333862]
+	chromedriver!(No symbol) [0x7ff7622d96e8]
+	chromedriver!(No symbol) [0x7ff7622da5d3]
+	chromedriver!GetHandleVerifier [0x7ff762825ddd+3199fd]
+	chromedriver!GetHandleVerifier [0x7ff7628204bd+3140dd]
+	chromedriver!GetHandleVerifier [0x7ff7628429ba+3365da]
+	chromedriver!GetHandleVerifier [0x7ff76253ca45+30665]
+	chromedriver!GetHandleVerifier [0x7ff762545b9c+397bc]
+	chromedriver!GetHandleVerifier [0x7ff76252a4c4+1e0e4]
+	chromedriver!GetHandleVerifier [0x7ff76252a676+1e296]
+	chromedriver!GetHandleVerifier [0x7ff76250ef87+2ba7]
+	KERNEL32!BaseThreadInitThunk [0x7ff9635ce8d7+17]
+	ntdll!RtlUserThreadStart [0x7ff9652bc34c+2c]
+</msg>
+<msg time="2026-03-16T09:27:51.783789" level="FAIL">NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=146.0.7680.80)
+Stacktrace:
+	chromedriver!GetHandleVerifier [0x7ff7625210a5+14cc5]
+	chromedriver!GetHandleVerifier [0x7ff762521110+14d30]
+	chromedriver!(No symbol) [0x7ff76228db6d]
+	chromedriver!(No symbol) [0x7ff762264352]
+	chromedriver!(No symbol) [0x7ff762317256]
+	chromedriver!(No symbol) [0x7ff762333862]
+	chromedriver!(No symbol) [0x7ff7622d96e8]
+	chromedriver!(No symbol) [0x7ff7622da5d3]
+	chromedriver!GetHandleVerifier [0x7ff762825ddd+3199fd]
+	chromedriver!GetHandleVerifier [0x7ff7628204bd+3140dd]
+	chromedriver!GetHandleVerifier [0x7ff7628429ba+3365da]
+	chromedriver!GetHandleVerifier [0x7ff76253ca45+30665]
+	chromedriver!GetHandleVerifier [0x7ff762545b9c+397bc]
+	chromedriver!GetHandleVerifier [0x7ff76252a4c4+1e0e4]
+	chromedriver!GetHandleVerifier [0x7ff76252a676+1e296]
+	chromedriver!GetHandleVerifier [0x7ff76250ef87+2ba7]
+	KERNEL32!BaseThreadInitThunk [0x7ff9635ce8d7+17]
+	ntdll!RtlUserThreadStart [0x7ff9652bc34c+2c]
+</msg>
 <arg>//button[contains(text(), 'Login')]</arg>
 <arg>10s</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="FAIL" start="2026-03-16T09:23:02.360075" elapsed="0.006310">No browser is open.</status>
+<status status="FAIL" start="2026-03-16T09:27:50.232451" elapsed="1.562220">NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=146.0.7680.80)
+Stacktrace:
+	chromedriver!GetHandleVerifier [0x7ff7625210a5+14cc5]
+	chromedriver!GetHandleVerifier [0x7ff762521110+14d30]
+	chromedriver!(No symbol) [0x7ff76228db6d]
+	chromedriver!(No symbol) [0x7ff762264352]
+	chromedriver!(No symbol) [0x7ff762317256]
+	chromedriver!(No symbol) [0x7ff762333862]
+	chromedriver!(No symbol) [0x7ff7622d96e8]
+	chromedriver!(No symbol) [0x7ff7622da5d3]
+	chromedriver!GetHandleVerifier [0x7ff762825ddd+3199fd]
+	chromedriver!GetHandleVerifier [0x7ff7628204bd+3140dd]
+	chromedriver!GetHandleVerifier [0x7ff7628429ba+3365da]
+	chromedriver!GetHandleVerifier [0x7ff76253ca45+30665]
+	chromedriver!GetHandleVerifier [0x7ff762545b9c+397bc]
+	chromedriver!GetHandleVerifier [0x7ff76252a4c4+1e0e4]
+	chromedriver!GetHandleVerifier [0x7ff76252a676+1e296]
+	chromedriver!GetHandleVerifier [0x7ff76250ef87+2ba7]
+	KERNEL32!BaseThreadInitThunk [0x7ff9635ce8d7+17]
+	ntdll!RtlUserThreadStart [0x7ff9652bc34c+2c]
+</status>
 </kw>
 <kw name="Click Button" owner="SeleniumLibrary">
 <arg>//button[contains(text(), 'Login')]</arg>
 <doc>Clicks the button identified by ``locator``.</doc>
-<status status="NOT RUN" start="2026-03-16T09:23:02.366816" elapsed="0.000170"/>
+<status status="NOT RUN" start="2026-03-16T09:27:51.795151" elapsed="0.000205"/>
 </kw>
 <kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
 <arg>//input[@type='email']</arg>
 <arg>5s</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="NOT RUN" start="2026-03-16T09:23:02.367343" elapsed="0.000150"/>
+<status status="NOT RUN" start="2026-03-16T09:27:51.795665" elapsed="0.000166"/>
 </kw>
 <kw name="Input Text" owner="SeleniumLibrary">
 <arg>//input[@type='email']</arg>
 <arg>${VALID_EMAIL}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="NOT RUN" start="2026-03-16T09:23:02.367758" elapsed="0.000126"/>
+<status status="NOT RUN" start="2026-03-16T09:27:51.796121" elapsed="0.000156"/>
 </kw>
 <kw name="Input Text" owner="SeleniumLibrary">
 <arg>//input[@type='password']</arg>
 <arg>${VALID_PASS}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="NOT RUN" start="2026-03-16T09:23:02.368129" elapsed="0.000118"/>
+<status status="NOT RUN" start="2026-03-16T09:27:51.796568" elapsed="0.000158"/>
 </kw>
 <kw name="Click Button" owner="SeleniumLibrary">
 <arg>//button[@type='submit']</arg>
 <doc>Clicks the button identified by ``locator``.</doc>
-<status status="NOT RUN" start="2026-03-16T09:23:02.368482" elapsed="0.000118"/>
+<status status="NOT RUN" start="2026-03-16T09:27:51.797008" elapsed="0.000157"/>
 </kw>
 <kw name="Wait Until Page Contains" owner="SeleniumLibrary">
 <arg>Dashboard</arg>
 <arg>10s</arg>
 <doc>Waits until ``text`` appears on the current page.</doc>
-<status status="NOT RUN" start="2026-03-16T09:23:02.368835" elapsed="0.000123"/>
+<status status="NOT RUN" start="2026-03-16T09:27:51.797445" elapsed="0.000153"/>
 </kw>
 <kw name="Page Should Contain" owner="SeleniumLibrary">
 <arg>Welcome</arg>
 <doc>Verifies that current page contains ``text``.</doc>
-<status status="NOT RUN" start="2026-03-16T09:23:02.369252" elapsed="0.000119"/>
+<status status="NOT RUN" start="2026-03-16T09:27:51.797878" elapsed="0.000152"/>
 </kw>
-<status status="FAIL" start="2026-03-16T09:23:02.356714" elapsed="0.012954">No browser is open.</status>
+<kw name="Close Browser" owner="SeleniumLibrary" type="TEARDOWN">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2026-03-16T09:27:51.798486" elapsed="2.074782"/>
+</kw>
+<status status="FAIL" start="2026-03-16T09:27:49.014883" elapsed="4.859744">NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=146.0.7680.80)
+Stacktrace:
+	chromedriver!GetHandleVerifier [0x7ff7625210a5+14cc5]
+	chromedriver!GetHandleVerifier [0x7ff762521110+14d30]
+	chromedriver!(No symbol) [0x7ff76228db6d]
+	chromedriver!(No symbol) [0x7ff762264352]
+	chromedriver!(No symbol) [0x7ff762317256]
+	chromedriver!(No symbol) [0x7ff762333862]
+	chromedriver!(No symbol) [0x7ff7622d96e8]
+	chromedriver!(No symbol) [0x7ff7622da5d3]
+	chromedriver!GetHandleVerifier [0x7ff762825ddd+3199fd]
+	chromedriver!GetHandleVerifier [0x7ff7628204bd+3140dd]
+	chromedriver!GetHandleVerifier [0x7ff7628429ba+3365da]
+	chromedriver!GetHandleVerifier [0x7ff76253ca45+30665]
+	chromedriver!GetHandleVerifier [0x7ff762545b9c+397bc]
+	chromedriver!GetHandleVerifier [0x7ff76252a4c4+1e0e4]
+	chromedriver!GetHandleVerifier [0x7ff76252a676+1e296]
+	chromedriver!GetHandleVerifier [0x7ff76250ef87+2ba7]
+	KERNEL32!BaseThreadInitThunk [0x7ff9635ce8d7+17]
+	ntdll!RtlUserThreadStart [0x7ff9652bc34c+2c]
+</status>
 </test>
-<test id="s1-s1-t2" name="Bejelentkezés érvénytelen adatokkal" line="15">
-<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
-<msg time="2026-03-16T09:23:02.376884" level="INFO">Cannot capture screenshot because no browser is open.</msg>
-<msg time="2026-03-16T09:23:02.377200" level="FAIL">No browser is open.</msg>
-<arg>//button[contains(text(), 'Login')]</arg>
-<arg>10s</arg>
-<doc>Waits until the element ``locator`` is visible.</doc>
-<status status="FAIL" start="2026-03-16T09:23:02.376465" elapsed="0.004473">No browser is open.</status>
+<test id="s1-t2" name="Bejelentkezés érvénytelen adatokkal" line="17">
+<kw name="Open Browser And Load Page" owner="common" type="SETUP">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<arg>${URL}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="FAIL" start="2026-03-16T09:27:53.896600" elapsed="0.000344">Execution terminated by signal</status>
 </kw>
-<kw name="Click Button" owner="SeleniumLibrary">
-<arg>//button[contains(text(), 'Login')]</arg>
-<doc>Clicks the button identified by ``locator``.</doc>
-<status status="NOT RUN" start="2026-03-16T09:23:02.381280" elapsed="0.000135"/>
-</kw>
-<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
-<arg>//input[@type='email']</arg>
-<arg>5s</arg>
-<doc>Waits until the element ``locator`` is visible.</doc>
-<status status="NOT RUN" start="2026-03-16T09:23:02.381660" elapsed="0.000117"/>
-</kw>
-<kw name="Input Text" owner="SeleniumLibrary">
-<arg>//input[@type='email']</arg>
-<arg>${INVALID_EMAIL}</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="NOT RUN" start="2026-03-16T09:23:02.382019" elapsed="0.000117"/>
-</kw>
-<kw name="Input Text" owner="SeleniumLibrary">
-<arg>//input[@type='password']</arg>
-<arg>${INVALID_PASS}</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="NOT RUN" start="2026-03-16T09:23:02.382372" elapsed="0.000112"/>
-</kw>
-<kw name="Click Button" owner="SeleniumLibrary">
-<arg>//button[@type='submit']</arg>
-<doc>Clicks the button identified by ``locator``.</doc>
-<status status="NOT RUN" start="2026-03-16T09:23:02.382717" elapsed="0.000111"/>
-</kw>
-<kw name="Wait Until Page Contains Element" owner="SeleniumLibrary">
-<arg>//div[contains(@class, 'error')]</arg>
-<arg>5s</arg>
-<doc>Waits until the element ``locator`` appears on the current page.</doc>
-<status status="NOT RUN" start="2026-03-16T09:23:02.383062" elapsed="0.000111"/>
-</kw>
-<kw name="Page Should Contain" owner="SeleniumLibrary">
-<arg>Invalid email or password</arg>
-<doc>Verifies that current page contains ``text``.</doc>
-<status status="NOT RUN" start="2026-03-16T09:23:02.383411" elapsed="0.000111"/>
-</kw>
-<status status="FAIL" start="2026-03-16T09:23:02.373344" elapsed="0.010457">No browser is open.</status>
-</test>
-<test id="s1-s1-t3" name="Üres mezők ellenőrzése" line="25">
-<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
-<msg time="2026-03-16T09:23:02.393575" level="INFO">Cannot capture screenshot because no browser is open.</msg>
-<msg time="2026-03-16T09:23:02.393783" level="FAIL">No browser is open.</msg>
-<arg>//button[contains(text(), 'Login')]</arg>
-<arg>10s</arg>
-<doc>Waits until the element ``locator`` is visible.</doc>
-<status status="FAIL" start="2026-03-16T09:23:02.393107" elapsed="0.005533">No browser is open.</status>
-</kw>
-<kw name="Click Button" owner="SeleniumLibrary">
-<arg>//button[contains(text(), 'Login')]</arg>
-<doc>Clicks the button identified by ``locator``.</doc>
-<status status="NOT RUN" start="2026-03-16T09:23:02.399026" elapsed="0.000150"/>
-</kw>
-<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
-<arg>//input[@type='email']</arg>
-<arg>5s</arg>
-<doc>Waits until the element ``locator`` is visible.</doc>
-<status status="NOT RUN" start="2026-03-16T09:23:02.399432" elapsed="0.000132"/>
-</kw>
-<kw name="Input Text" owner="SeleniumLibrary">
-<arg>//input[@type='email']</arg>
-<arg>${EMPTY}</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="NOT RUN" start="2026-03-16T09:23:02.399808" elapsed="0.000115"/>
-</kw>
-<kw name="Input Text" owner="SeleniumLibrary">
-<arg>//input[@type='password']</arg>
-<arg>${EMPTY}</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="NOT RUN" start="2026-03-16T09:23:02.400156" elapsed="0.000114"/>
-</kw>
-<kw name="Click Button" owner="SeleniumLibrary">
-<arg>//button[@type='submit']</arg>
-<doc>Clicks the button identified by ``locator``.</doc>
-<status status="NOT RUN" start="2026-03-16T09:23:02.400507" elapsed="0.000113"/>
-</kw>
-<kw name="Wait Until Page Contains Element" owner="SeleniumLibrary">
-<arg>//div[contains(@class, 'error')]</arg>
-<arg>5s</arg>
-<doc>Waits until the element ``locator`` appears on the current page.</doc>
-<status status="NOT RUN" start="2026-03-16T09:23:02.400856" elapsed="0.000114"/>
-</kw>
-<kw name="Page Should Contain" owner="SeleniumLibrary">
-<arg>Email is required</arg>
-<doc>Verifies that current page contains ``text``.</doc>
-<status status="NOT RUN" start="2026-03-16T09:23:02.401176" elapsed="0.000113"/>
-</kw>
-<status status="FAIL" start="2026-03-16T09:23:02.387623" elapsed="0.013936">No browser is open.</status>
-</test>
-<test id="s1-s1-t4" name="Kijelentkezés" line="35">
-<kw name="Bejelentkezés érvényes adatokkal">
-<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
-<msg time="2026-03-16T09:23:02.412425" level="INFO">Cannot capture screenshot because no browser is open.</msg>
-<msg time="2026-03-16T09:23:02.412770" level="FAIL">No browser is open.</msg>
-<arg>//button[contains(text(), 'Login')]</arg>
-<arg>10s</arg>
-<doc>Waits until the element ``locator`` is visible.</doc>
-<status status="FAIL" start="2026-03-16T09:23:02.412075" elapsed="0.004678">No browser is open.</status>
-</kw>
-<kw name="Click Button" owner="SeleniumLibrary">
-<arg>//button[contains(text(), 'Login')]</arg>
-<doc>Clicks the button identified by ``locator``.</doc>
-<status status="NOT RUN" start="2026-03-16T09:23:02.416974" elapsed="0.000133"/>
-</kw>
-<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
-<arg>//input[@type='email']</arg>
-<arg>5s</arg>
-<doc>Waits until the element ``locator`` is visible.</doc>
-<status status="NOT RUN" start="2026-03-16T09:23:02.417261" elapsed="0.000109"/>
-</kw>
-<kw name="Input Text" owner="SeleniumLibrary">
-<arg>//input[@type='email']</arg>
-<arg>${VALID_EMAIL}</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="NOT RUN" start="2026-03-16T09:23:02.417509" elapsed="0.000103"/>
-</kw>
-<kw name="Input Text" owner="SeleniumLibrary">
-<arg>//input[@type='password']</arg>
-<arg>${VALID_PASS}</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="NOT RUN" start="2026-03-16T09:23:02.417744" elapsed="0.000103"/>
-</kw>
-<kw name="Click Button" owner="SeleniumLibrary">
-<arg>//button[@type='submit']</arg>
-<doc>Clicks the button identified by ``locator``.</doc>
-<status status="NOT RUN" start="2026-03-16T09:23:02.417979" elapsed="0.000100"/>
-</kw>
-<kw name="Wait Until Page Contains" owner="SeleniumLibrary">
-<arg>Dashboard</arg>
-<arg>10s</arg>
-<doc>Waits until ``text`` appears on the current page.</doc>
-<status status="NOT RUN" start="2026-03-16T09:23:02.418208" elapsed="0.000101"/>
-</kw>
-<kw name="Page Should Contain" owner="SeleniumLibrary">
-<arg>Welcome</arg>
-<doc>Verifies that current page contains ``text``.</doc>
-<status status="NOT RUN" start="2026-03-16T09:23:02.418443" elapsed="0.000103"/>
-</kw>
-<status status="FAIL" start="2026-03-16T09:23:02.411626" elapsed="0.007073">No browser is open.</status>
-</kw>
-<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
-<arg>//button[contains(text(), 'Logout')]</arg>
-<arg>5s</arg>
-<doc>Waits until the element ``locator`` is visible.</doc>
-<status status="NOT RUN" start="2026-03-16T09:23:02.418980" elapsed="0.000115"/>
-</kw>
-<kw name="Click Button" owner="SeleniumLibrary">
-<arg>//button[contains(text(), 'Logout')]</arg>
-<doc>Clicks the button identified by ``locator``.</doc>
-<status status="NOT RUN" start="2026-03-16T09:23:02.419343" elapsed="0.000120"/>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="NOT RUN" start="2026-03-16T09:27:53.897139" elapsed="0.000124"/>
 </kw>
 <kw name="Wait Until Page Contains" owner="SeleniumLibrary">
 <arg>Space &amp; Beyond</arg>
-<arg>5s</arg>
+<arg>10s</arg>
 <doc>Waits until ``text`` appears on the current page.</doc>
-<status status="NOT RUN" start="2026-03-16T09:23:02.419712" elapsed="0.000143"/>
+<status status="NOT RUN" start="2026-03-16T09:27:53.897409" elapsed="0.000116"/>
 </kw>
-<kw name="Page Should Contain Element" owner="SeleniumLibrary">
-<arg>//button[contains(text(), 'Login')]</arg>
-<doc>Verifies that element ``locator`` is found on the current page.</doc>
-<status status="NOT RUN" start="2026-03-16T09:23:02.420169" elapsed="0.000163"/>
+<status status="FAIL" start="2026-03-16T09:27:53.896155" elapsed="0.001565">Execution terminated by signal</status>
 </kw>
-<status status="FAIL" start="2026-03-16T09:23:02.408780" elapsed="0.011867">No browser is open.</status>
+<kw name="Close Browser" owner="SeleniumLibrary" type="TEARDOWN">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2026-03-16T09:27:53.898222" elapsed="0.000248"/>
+</kw>
+<status status="FAIL" start="2026-03-16T09:27:53.886349" elapsed="0.012318">Setup failed:
+Execution terminated by signal</status>
 </test>
-<status status="FAIL" start="2026-03-16T09:23:02.104848" elapsed="0.319573"/>
-</suite>
-<suite id="s1-s2" name="Navigacio" source="C:\Users\PalmaiJanos\Documents\GitHub\robotframework\navigacio.robot">
-<test id="s1-s2-t1" name="Főoldal betöltése" line="5">
-<kw name="Title Should Be" owner="SeleniumLibrary">
-<msg time="2026-03-16T09:23:02.442998" level="INFO">Cannot capture screenshot because no browser is open.</msg>
-<msg time="2026-03-16T09:23:02.443199" level="FAIL">No browser is open.</msg>
-<arg>Space &amp; Beyond | Testim.io demo</arg>
-<doc>Verifies that the current page title equals ``title``.</doc>
-<status status="FAIL" start="2026-03-16T09:23:02.442712" elapsed="0.004417">No browser is open.</status>
-</kw>
-<kw name="Page Should Contain" owner="SeleniumLibrary">
-<arg>Space &amp; Beyond</arg>
-<doc>Verifies that current page contains ``text``.</doc>
-<status status="NOT RUN" start="2026-03-16T09:23:02.447493" elapsed="0.000144"/>
-</kw>
-<kw name="Page Should Contain Element" owner="SeleniumLibrary">
-<arg>//h1[contains(text(), 'Space Advisor')]</arg>
-<doc>Verifies that element ``locator`` is found on the current page.</doc>
-<status status="NOT RUN" start="2026-03-16T09:23:02.447893" elapsed="0.000115"/>
-</kw>
-<status status="FAIL" start="2026-03-16T09:23:02.436845" elapsed="0.011435">No browser is open.</status>
+<test id="s1-t3" name="Üres mezők ellenőrzése" line="27">
+<tag>robot:exit</tag>
+<status status="FAIL" start="2026-03-16T09:27:53.902544" elapsed="0.003436">Test execution stopped due to a fatal error.</status>
 </test>
-<test id="s1-s2-t2" name="Menü elemek navigációja - Felnőttek száma" line="10">
-<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
-<msg time="2026-03-16T09:23:02.458393" level="INFO">Cannot capture screenshot because no browser is open.</msg>
-<msg time="2026-03-16T09:23:02.458608" level="FAIL">No browser is open.</msg>
-<arg>//div[contains(text(), 'Adults')]</arg>
-<arg>5s</arg>
-<doc>Waits until the element ``locator`` is visible.</doc>
-<status status="FAIL" start="2026-03-16T09:23:02.457938" elapsed="0.004963">No browser is open.</status>
-</kw>
-<kw name="Click Element" owner="SeleniumLibrary">
-<arg>//div[contains(text(), 'Adults (18+)')]/following-sibling::div//button[text()='2']</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<status status="NOT RUN" start="2026-03-16T09:23:02.463250" elapsed="0.000134"/>
-</kw>
-<kw name="Get Text" owner="SeleniumLibrary">
-<var>${selected}</var>
-<arg>//div[contains(text(), 'Adults (18+)')]/following-sibling::div//span[contains(@class, 'selected')]</arg>
-<doc>Returns the text value of the element identified by ``locator``.</doc>
-<status status="NOT RUN" start="2026-03-16T09:23:02.463626" elapsed="0.000114"/>
-</kw>
-<kw name="Should Be Equal" owner="BuiltIn">
-<arg>${selected}</arg>
-<arg>2</arg>
-<doc>Fails if the given objects are unequal.</doc>
-<status status="NOT RUN" start="2026-03-16T09:23:02.463975" elapsed="0.000112"/>
-</kw>
-<status status="FAIL" start="2026-03-16T09:23:02.451462" elapsed="0.012892">No browser is open.</status>
+<test id="s1-t4" name="Kijelentkezés" line="37">
+<tag>robot:exit</tag>
+<status status="FAIL" start="2026-03-16T09:27:53.910347" elapsed="0.007367">Test execution stopped due to a fatal error.</status>
 </test>
-<test id="s1-s2-t3" name="Menü elemek navigációja - Gyerekek száma" line="16">
-<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
-<msg time="2026-03-16T09:23:02.471035" level="INFO">Cannot capture screenshot because no browser is open.</msg>
-<msg time="2026-03-16T09:23:02.471263" level="FAIL">No browser is open.</msg>
-<arg>//div[contains(text(), 'Children')]</arg>
-<arg>5s</arg>
-<doc>Waits until the element ``locator`` is visible.</doc>
-<status status="FAIL" start="2026-03-16T09:23:02.470385" elapsed="0.006969">No browser is open.</status>
-</kw>
-<kw name="Click Element" owner="SeleniumLibrary">
-<arg>//div[contains(text(), 'Children (0-7)')]/following-sibling::div//button[text()='2']</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<status status="NOT RUN" start="2026-03-16T09:23:02.477709" elapsed="0.000139"/>
-</kw>
-<kw name="Get Text" owner="SeleniumLibrary">
-<var>${selected}</var>
-<arg>//div[contains(text(), 'Children (0-7)')]/following-sibling::div//span[contains(@class, 'selected')]</arg>
-<doc>Returns the text value of the element identified by ``locator``.</doc>
-<status status="NOT RUN" start="2026-03-16T09:23:02.478092" elapsed="0.000114"/>
-</kw>
-<kw name="Should Be Equal" owner="BuiltIn">
-<arg>${selected}</arg>
-<arg>2</arg>
-<doc>Fails if the given objects are unequal.</doc>
-<status status="NOT RUN" start="2026-03-16T09:23:02.478442" elapsed="0.000113"/>
-</kw>
-<status status="FAIL" start="2026-03-16T09:23:02.467392" elapsed="0.011431">No browser is open.</status>
-</test>
-<test id="s1-s2-t4" name="Menü elemek navigációja - Bolygó színe" line="22">
-<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
-<msg time="2026-03-16T09:23:02.484929" level="INFO">Cannot capture screenshot because no browser is open.</msg>
-<msg time="2026-03-16T09:23:02.485120" level="FAIL">No browser is open.</msg>
-<arg>//div[contains(text(), 'Planet color')]</arg>
-<arg>5s</arg>
-<doc>Waits until the element ``locator`` is visible.</doc>
-<status status="FAIL" start="2026-03-16T09:23:02.484551" elapsed="0.010213">No browser is open.</status>
-</kw>
-<kw name="Click Element" owner="SeleniumLibrary">
-<arg>//div[contains(text(), 'Planet color')]</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<status status="NOT RUN" start="2026-03-16T09:23:02.495135" elapsed="0.000145"/>
-</kw>
-<kw name="Click Element" owner="SeleniumLibrary">
-<arg>//div[contains(text(), 'Red')]</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<status status="NOT RUN" start="2026-03-16T09:23:02.495531" elapsed="0.000118"/>
-</kw>
-<kw name="Wait Until Page Contains Element" owner="SeleniumLibrary">
-<arg>//div[contains(@class, 'destination')][contains(@style, 'red')]</arg>
-<arg>5s</arg>
-<doc>Waits until the element ``locator`` appears on the current page.</doc>
-<status status="NOT RUN" start="2026-03-16T09:23:02.495889" elapsed="0.000116"/>
-</kw>
-<status status="FAIL" start="2026-03-16T09:23:02.481817" elapsed="0.014464">No browser is open.</status>
-</test>
-<test id="s1-s2-t5" name="Vissza gomb működése" line="28">
-<kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2026-03-16T09:23:02.503105" level="INFO">Clicking element '//h5[text()='Madan']'.</msg>
-<msg time="2026-03-16T09:23:02.503313" level="INFO">Cannot capture screenshot because no browser is open.</msg>
-<msg time="2026-03-16T09:23:02.503512" level="FAIL">No browser is open.</msg>
-<arg>//h5[text()='Madan']</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<status status="FAIL" start="2026-03-16T09:23:02.502723" elapsed="0.008331">No browser is open.</status>
-</kw>
-<kw name="Wait Until Page Contains Element" owner="SeleniumLibrary">
-<arg>//div[contains(@class, 'modal')]</arg>
-<arg>5s</arg>
-<doc>Waits until the element ``locator`` appears on the current page.</doc>
-<status status="NOT RUN" start="2026-03-16T09:23:02.511411" elapsed="0.000148"/>
-</kw>
-<kw name="Page Should Contain" owner="SeleniumLibrary">
-<arg>Madan</arg>
-<doc>Verifies that current page contains ``text``.</doc>
-<status status="NOT RUN" start="2026-03-16T09:23:02.511806" elapsed="0.000113"/>
-</kw>
-<kw name="Click Element" owner="SeleniumLibrary">
-<arg>//button[contains(text(), 'Close')]</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<status status="NOT RUN" start="2026-03-16T09:23:02.512151" elapsed="0.000111"/>
-</kw>
-<kw name="Wait Until Page Does Not Contain Element" owner="SeleniumLibrary">
-<arg>//div[contains(@class, 'modal')]</arg>
-<arg>5s</arg>
-<doc>Waits until the element ``locator`` disappears from the current page.</doc>
-<status status="NOT RUN" start="2026-03-16T09:23:02.512494" elapsed="0.000112"/>
-</kw>
-<status status="FAIL" start="2026-03-16T09:23:02.499612" elapsed="0.013264">No browser is open.</status>
-</test>
-<status status="FAIL" start="2026-03-16T09:23:02.427735" elapsed="0.088486"/>
-</suite>
-<suite id="s1-s3" name="Termekek" source="C:\Users\PalmaiJanos\Documents\GitHub\robotframework\termekek.robot">
-<test id="s1-s3-t1" name="Termékek listázása" line="5">
-<kw name="Get Element Count" owner="SeleniumLibrary">
-<msg time="2026-03-16T09:23:02.529871" level="INFO">Cannot capture screenshot because no browser is open.</msg>
-<msg time="2026-03-16T09:23:02.530069" level="FAIL">No browser is open.</msg>
-<var>${count}</var>
-<arg>//h5</arg>
-<doc>Returns the number of elements matching ``locator``.</doc>
-<status status="FAIL" start="2026-03-16T09:23:02.529548" elapsed="0.004062">No browser is open.</status>
-</kw>
-<kw name="Should Be True" owner="BuiltIn">
-<arg>${count} &gt;= 8</arg>
-<arg>Nem jelenik meg legalább 8 termék</arg>
-<doc>Fails if the given condition is not true.</doc>
-<status status="NOT RUN" start="2026-03-16T09:23:02.533949" elapsed="0.000141"/>
-</kw>
-<status status="FAIL" start="2026-03-16T09:23:02.526616" elapsed="0.007754">No browser is open.</status>
-</test>
-<test id="s1-s3-t2" name="Termék szűrése szín alapján" line="9">
-<kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2026-03-16T09:23:02.546327" level="INFO">Clicking element '//div[contains(text(), 'Planet color')]'.</msg>
-<msg time="2026-03-16T09:23:02.546550" level="INFO">Cannot capture screenshot because no browser is open.</msg>
-<msg time="2026-03-16T09:23:02.547667" level="FAIL">No browser is open.</msg>
-<arg>//div[contains(text(), 'Planet color')]</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<status status="FAIL" start="2026-03-16T09:23:02.545942" elapsed="0.012864">No browser is open.</status>
-</kw>
-<kw name="Click Element" owner="SeleniumLibrary">
-<arg>//div[contains(text(), 'Blue')]</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<status status="NOT RUN" start="2026-03-16T09:23:02.559500" elapsed="0.000196"/>
-</kw>
-<kw name="Wait Until Page Contains Element" owner="SeleniumLibrary">
-<arg>//div[contains(@class, 'destination')][contains(@style, 'blue')]</arg>
-<arg>5s</arg>
-<doc>Waits until the element ``locator`` appears on the current page.</doc>
-<status status="NOT RUN" start="2026-03-16T09:23:02.560087" elapsed="0.000160"/>
-</kw>
-<kw name="Get Element Count" owner="SeleniumLibrary">
-<var>${blue_count}</var>
-<arg>//div[contains(@class, 'destination')][contains(@style, 'blue')]</arg>
-<doc>Returns the number of elements matching ``locator``.</doc>
-<status status="NOT RUN" start="2026-03-16T09:23:02.563602" elapsed="0.000203"/>
-</kw>
-<kw name="Should Be True" owner="BuiltIn">
-<arg>${blue_count} &gt; 0</arg>
-<doc>Fails if the given condition is not true.</doc>
-<status status="NOT RUN" start="2026-03-16T09:23:02.564050" elapsed="0.000128"/>
-</kw>
-<status status="FAIL" start="2026-03-16T09:23:02.537820" elapsed="0.026610">No browser is open.</status>
-</test>
-<test id="s1-s3-t3" name="Termék keresése név alapján" line="16">
-<kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2026-03-16T09:23:02.596553" level="INFO">Clicking element '//h5[text()='Madan']'.</msg>
-<msg time="2026-03-16T09:23:02.596827" level="INFO">Cannot capture screenshot because no browser is open.</msg>
-<msg time="2026-03-16T09:23:02.597173" level="FAIL">No browser is open.</msg>
-<arg>//h5[text()='Madan']</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<status status="FAIL" start="2026-03-16T09:23:02.596126" elapsed="0.005052">No browser is open.</status>
-</kw>
-<kw name="Wait Until Page Contains Element" owner="SeleniumLibrary">
-<arg>//div[contains(@class, 'modal')]</arg>
-<arg>5s</arg>
-<doc>Waits until the element ``locator`` appears on the current page.</doc>
-<status status="NOT RUN" start="2026-03-16T09:23:02.601503" elapsed="0.000138"/>
-</kw>
-<kw name="Page Should Contain" owner="SeleniumLibrary">
-<arg>Madan</arg>
-<doc>Verifies that current page contains ``text``.</doc>
-<status status="NOT RUN" start="2026-03-16T09:23:02.601860" elapsed="0.000112"/>
-</kw>
-<kw name="Page Should Contain" owner="SeleniumLibrary">
-<arg>Praesent blandit</arg>
-<doc>Verifies that current page contains ``text``.</doc>
-<status status="NOT RUN" start="2026-03-16T09:23:02.602175" elapsed="0.000114"/>
-</kw>
-<kw name="Page Should Contain" owner="SeleniumLibrary">
-<arg>$1183.46</arg>
-<doc>Verifies that current page contains ``text``.</doc>
-<status status="NOT RUN" start="2026-03-16T09:23:02.602507" elapsed="0.000118"/>
-</kw>
-<status status="FAIL" start="2026-03-16T09:23:02.580058" elapsed="0.022827">No browser is open.</status>
-</test>
-<test id="s1-s3-t4" name="Termék keresése másik név alapján" line="23">
-<kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2026-03-16T09:23:02.610552" level="INFO">Clicking element '//h5[text()='Shenji']'.</msg>
-<msg time="2026-03-16T09:23:02.610799" level="INFO">Cannot capture screenshot because no browser is open.</msg>
-<msg time="2026-03-16T09:23:02.610980" level="FAIL">No browser is open.</msg>
-<arg>//h5[text()='Shenji']</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<status status="FAIL" start="2026-03-16T09:23:02.610195" elapsed="0.003917">No browser is open.</status>
-</kw>
-<kw name="Wait Until Page Contains Element" owner="SeleniumLibrary">
-<arg>//div[contains(@class, 'modal')]</arg>
-<arg>5s</arg>
-<doc>Waits until the element ``locator`` appears on the current page.</doc>
-<status status="NOT RUN" start="2026-03-16T09:23:02.614468" elapsed="0.000138"/>
-</kw>
-<kw name="Page Should Contain" owner="SeleniumLibrary">
-<arg>Shenji</arg>
-<doc>Verifies that current page contains ``text``.</doc>
-<status status="NOT RUN" start="2026-03-16T09:23:02.614826" elapsed="0.000114"/>
-</kw>
-<kw name="Page Should Contain" owner="SeleniumLibrary">
-<arg>Vestibulum quam sapien</arg>
-<doc>Verifies that current page contains ``text``.</doc>
-<status status="NOT RUN" start="2026-03-16T09:23:02.615143" elapsed="0.000110"/>
-</kw>
-<kw name="Page Should Contain" owner="SeleniumLibrary">
-<arg>$1089.07</arg>
-<doc>Verifies that current page contains ``text``.</doc>
-<status status="NOT RUN" start="2026-03-16T09:23:02.615453" elapsed="0.000109"/>
-</kw>
-<status status="FAIL" start="2026-03-16T09:23:02.607740" elapsed="0.008056">No browser is open.</status>
-</test>
-<test id="s1-s3-t5" name="Termék részletek megtekintése" line="30">
-<kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2026-03-16T09:23:02.624367" level="INFO">Clicking element '//h5[text()='Tongli']'.</msg>
-<msg time="2026-03-16T09:23:02.624705" level="INFO">Cannot capture screenshot because no browser is open.</msg>
-<msg time="2026-03-16T09:23:02.624916" level="FAIL">No browser is open.</msg>
-<arg>//h5[text()='Tongli']</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<status status="FAIL" start="2026-03-16T09:23:02.623776" elapsed="0.004333">No browser is open.</status>
-</kw>
-<kw name="Wait Until Page Contains Element" owner="SeleniumLibrary">
-<arg>//div[contains(@class, 'modal')]</arg>
-<arg>5s</arg>
-<doc>Waits until the element ``locator`` appears on the current page.</doc>
-<status status="NOT RUN" start="2026-03-16T09:23:02.628420" elapsed="0.000135"/>
-</kw>
-<kw name="Page Should Contain" owner="SeleniumLibrary">
-<arg>Tongli</arg>
-<doc>Verifies that current page contains ``text``.</doc>
-<status status="NOT RUN" start="2026-03-16T09:23:02.628773" elapsed="0.000113"/>
-</kw>
-<kw name="Page Should Contain" owner="SeleniumLibrary">
-<arg>Phasellus sit amet erat</arg>
-<doc>Verifies that current page contains ``text``.</doc>
-<status status="NOT RUN" start="2026-03-16T09:23:02.629090" elapsed="0.000116"/>
-</kw>
-<kw name="Page Should Contain" owner="SeleniumLibrary">
-<arg>$192.64</arg>
-<doc>Verifies that current page contains ``text``.</doc>
-<status status="NOT RUN" start="2026-03-16T09:23:02.629407" elapsed="0.000109"/>
-</kw>
-<kw name="Element Should Be Visible" owner="SeleniumLibrary">
-<arg>//img[contains(@src, 'tongli')]</arg>
-<doc>Verifies that the element identified by ``locator`` is visible.</doc>
-<status status="NOT RUN" start="2026-03-16T09:23:02.629713" elapsed="0.000108"/>
-</kw>
-<kw name="Click Element" owner="SeleniumLibrary">
-<arg>//button[contains(text(), 'Close')]</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<status status="NOT RUN" start="2026-03-16T09:23:02.630019" elapsed="0.000106"/>
-</kw>
-<status status="FAIL" start="2026-03-16T09:23:02.618231" elapsed="0.012127">No browser is open.</status>
-</test>
-<test id="s1-s3-t6" name="Termék részletek - Flagstaff ellenőrzése" line="39">
-<kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2026-03-16T09:23:02.635891" level="INFO">Clicking element '//h5[text()='Flagstaff']'.</msg>
-<msg time="2026-03-16T09:23:02.636108" level="INFO">Cannot capture screenshot because no browser is open.</msg>
-<msg time="2026-03-16T09:23:02.636538" level="FAIL">No browser is open.</msg>
-<arg>//h5[text()='Flagstaff']</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<status status="FAIL" start="2026-03-16T09:23:02.635461" elapsed="0.008144">No browser is open.</status>
-</kw>
-<kw name="Wait Until Page Contains Element" owner="SeleniumLibrary">
-<arg>//div[contains(@class, 'modal')]</arg>
-<arg>5s</arg>
-<doc>Waits until the element ``locator`` appears on the current page.</doc>
-<status status="NOT RUN" start="2026-03-16T09:23:02.643934" elapsed="0.000142"/>
-</kw>
-<kw name="Page Should Contain" owner="SeleniumLibrary">
-<arg>Flagstaff</arg>
-<doc>Verifies that current page contains ``text``.</doc>
-<status status="NOT RUN" start="2026-03-16T09:23:02.644291" elapsed="0.000115"/>
-</kw>
-<kw name="Page Should Contain" owner="SeleniumLibrary">
-<arg>Sed ante</arg>
-<doc>Verifies that current page contains ``text``.</doc>
-<status status="NOT RUN" start="2026-03-16T09:23:02.644605" elapsed="0.000111"/>
-</kw>
-<kw name="Page Should Contain" owner="SeleniumLibrary">
-<arg>$346.68</arg>
-<doc>Verifies that current page contains ``text``.</doc>
-<status status="NOT RUN" start="2026-03-16T09:23:02.644915" elapsed="0.000108"/>
-</kw>
-<kw name="Click Element" owner="SeleniumLibrary">
-<arg>//button[contains(text(), 'Close')]</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<status status="NOT RUN" start="2026-03-16T09:23:02.645220" elapsed="0.000107"/>
-</kw>
-<status status="FAIL" start="2026-03-16T09:23:02.632830" elapsed="0.012733">No browser is open.</status>
-</test>
-<test id="s1-s3-t7" name="Termék részletek - Sant Cugat Del Valles ellenőrzése" line="47">
-<kw name="Scroll Element Into View" owner="SeleniumLibrary">
-<msg time="2026-03-16T09:23:02.651528" level="INFO">Cannot capture screenshot because no browser is open.</msg>
-<msg time="2026-03-16T09:23:02.651797" level="FAIL">No browser is open.</msg>
-<arg>//h5[text()='Sant Cugat Del Valles']</arg>
-<doc>Scrolls the element identified by ``locator`` into view.</doc>
-<status status="FAIL" start="2026-03-16T09:23:02.651151" elapsed="0.007576">No browser is open.</status>
-</kw>
-<kw name="Click Element" owner="SeleniumLibrary">
-<arg>//h5[text()='Sant Cugat Del Valles']</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<status status="NOT RUN" start="2026-03-16T09:23:02.659055" elapsed="0.000143"/>
-</kw>
-<kw name="Wait Until Page Contains Element" owner="SeleniumLibrary">
-<arg>//div[contains(@class, 'modal')]</arg>
-<arg>5s</arg>
-<doc>Waits until the element ``locator`` appears on the current page.</doc>
-<status status="NOT RUN" start="2026-03-16T09:23:02.659416" elapsed="0.000115"/>
-</kw>
-<kw name="Page Should Contain" owner="SeleniumLibrary">
-<arg>Sant Cugat Del Valles</arg>
-<doc>Verifies that current page contains ``text``.</doc>
-<status status="NOT RUN" start="2026-03-16T09:23:02.659740" elapsed="0.000110"/>
-</kw>
-<kw name="Page Should Contain" owner="SeleniumLibrary">
-<arg>Duis aliquam convallis nunc</arg>
-<doc>Verifies that current page contains ``text``.</doc>
-<status status="NOT RUN" start="2026-03-16T09:23:02.660049" elapsed="0.000108"/>
-</kw>
-<kw name="Page Should Contain" owner="SeleniumLibrary">
-<arg>$1243.73</arg>
-<doc>Verifies that current page contains ``text``.</doc>
-<status status="NOT RUN" start="2026-03-16T09:23:02.660355" elapsed="0.000106"/>
-</kw>
-<kw name="Click Element" owner="SeleniumLibrary">
-<arg>//button[contains(text(), 'Close')]</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<status status="NOT RUN" start="2026-03-16T09:23:02.660658" elapsed="0.000109"/>
-</kw>
-<status status="FAIL" start="2026-03-16T09:23:02.648512" elapsed="0.012487">No browser is open.</status>
-</test>
-<test id="s1-s3-t8" name="Termék részletek - Shaheying ellenőrzése" line="56">
-<kw name="Scroll Element Into View" owner="SeleniumLibrary">
-<msg time="2026-03-16T09:23:02.666903" level="INFO">Cannot capture screenshot because no browser is open.</msg>
-<msg time="2026-03-16T09:23:02.667108" level="FAIL">No browser is open.</msg>
-<arg>//h5[text()='Shaheying']</arg>
-<doc>Scrolls the element identified by ``locator`` into view.</doc>
-<status status="FAIL" start="2026-03-16T09:23:02.666513" elapsed="0.004352">No browser is open.</status>
-</kw>
-<kw name="Click Element" owner="SeleniumLibrary">
-<arg>//h5[text()='Shaheying']</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<status status="NOT RUN" start="2026-03-16T09:23:02.671216" elapsed="0.000157"/>
-</kw>
-<kw name="Wait Until Page Contains Element" owner="SeleniumLibrary">
-<arg>//div[contains(@class, 'modal')]</arg>
-<arg>5s</arg>
-<doc>Waits until the element ``locator`` appears on the current page.</doc>
-<status status="NOT RUN" start="2026-03-16T09:23:02.671685" elapsed="0.000128"/>
-</kw>
-<kw name="Page Should Contain" owner="SeleniumLibrary">
-<arg>Shaheying</arg>
-<doc>Verifies that current page contains ``text``.</doc>
-<status status="NOT RUN" start="2026-03-16T09:23:02.672025" elapsed="0.000112"/>
-</kw>
-<kw name="Page Should Contain" owner="SeleniumLibrary">
-<arg>Integer tincidunt ante vel ipsum</arg>
-<doc>Verifies that current page contains ``text``.</doc>
-<status status="NOT RUN" start="2026-03-16T09:23:02.672369" elapsed="0.000139"/>
-</kw>
-<kw name="Page Should Contain" owner="SeleniumLibrary">
-<arg>$215.38</arg>
-<doc>Verifies that current page contains ``text``.</doc>
-<status status="NOT RUN" start="2026-03-16T09:23:02.672828" elapsed="0.000189"/>
-</kw>
-<kw name="Click Element" owner="SeleniumLibrary">
-<arg>//button[contains(text(), 'Close')]</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<status status="NOT RUN" start="2026-03-16T09:23:02.673401" elapsed="0.000164"/>
-</kw>
-<status status="FAIL" start="2026-03-16T09:23:02.663972" elapsed="0.009869">No browser is open.</status>
-</test>
-<status status="FAIL" start="2026-03-16T09:23:02.519513" elapsed="0.158231"/>
-</suite>
-<status status="FAIL" start="2026-03-16T09:23:02.066972" elapsed="0.614150"/>
+<status status="FAIL" start="2026-03-16T09:27:48.736654" elapsed="5.184327"/>
 </suite>
 <statistics>
 <total>
-<stat pass="0" fail="17" skip="0">All Tests</stat>
+<stat pass="0" fail="4" skip="0">All Tests</stat>
 </total>
 <tag>
+<stat info="combined" combined="NOT robot:exit" pass="0" fail="2" skip="0">NOT robot:exit</stat>
 </tag>
 <suite>
-<stat name="Robotframework" id="s1" pass="0" fail="17" skip="0">Robotframework</stat>
-<stat name="Bejelentkezes" id="s1-s1" pass="0" fail="4" skip="0">Robotframework.Bejelentkezes</stat>
-<stat name="Navigacio" id="s1-s2" pass="0" fail="5" skip="0">Robotframework.Navigacio</stat>
-<stat name="Termekek" id="s1-s3" pass="0" fail="8" skip="0">Robotframework.Termekek</stat>
+<stat name="Bejelentkezes" id="s1" pass="0" fail="4" skip="0">Bejelentkezes</stat>
 </suite>
 </statistics>
 <errors>
-<msg time="2026-03-16T09:23:02.107118" level="ERROR">Error in file 'C:\Users\PalmaiJanos\Documents\GitHub\robotframework\common.robot' on line 5: Setting 'Test Setup' is not allowed in resource file.</msg>
-<msg time="2026-03-16T09:23:02.110097" level="ERROR">Error in file 'C:\Users\PalmaiJanos\Documents\GitHub\robotframework\common.robot' on line 6: Setting 'Test Teardown' is not allowed in resource file.</msg>
+<msg time="2026-03-16T09:27:51.763453" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=146.0.7680.80)
+Stacktrace:
+	chromedriver!GetHandleVerifier [0x7ff7625210a5+14cc5]
+	chromedriver!GetHandleVerifier [0x7ff762521110+14d30]
+	chromedriver!(No symbol) [0x7ff76228db6d]
+	chromedriver!(No symbol) [0x7ff762264352]
+	chromedriver!(No symbol) [0x7ff762317256]
+	chromedriver!(No symbol) [0x7ff762333862]
+	chromedriver!(No symbol) [0x7ff7622d96e8]
+	chromedriver!(No symbol) [0x7ff7622da5d3]
+	chromedriver!GetHandleVerifier [0x7ff762825ddd+3199fd]
+	chromedriver!GetHandleVerifier [0x7ff7628204bd+3140dd]
+	chromedriver!GetHandleVerifier [0x7ff7628429ba+3365da]
+	chromedriver!GetHandleVerifier [0x7ff76253ca45+30665]
+	chromedriver!GetHandleVerifier [0x7ff762545b9c+397bc]
+	chromedriver!GetHandleVerifier [0x7ff76252a4c4+1e0e4]
+	chromedriver!GetHandleVerifier [0x7ff76252a676+1e296]
+	chromedriver!GetHandleVerifier [0x7ff76250ef87+2ba7]
+	KERNEL32!BaseThreadInitThunk [0x7ff9635ce8d7+17]
+	ntdll!RtlUserThreadStart [0x7ff9652bc34c+2c]
+</msg>
 </errors>
 </robot>

@@ -1,5 +1,7 @@
 *** Settings ***
 Resource    common.robot
+Test Setup    Open Browser And Load Page
+Test Teardown    Close Browser
 
 *** Test Cases ***
 Termékek listázása

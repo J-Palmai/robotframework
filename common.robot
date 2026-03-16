@@ -2,8 +2,6 @@
 Library    SeleniumLibrary
 Library    String
 Library    Collections
-Test Setup    Open Browser And Load Page
-Test Teardown    Close Browser
 
 *** Variables ***
 ${URL}           https://demo.testim.io

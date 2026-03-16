@@ -1,239 +1,1069 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.4.1 (Python 3.13.5 on win32)" generated="2026-03-16T09:27:48.731626" rpa="false" schemaversion="5">
-<suite id="s1" name="Bejelentkezes" source="C:\Users\PalmaiJanos\Documents\GitHub\robotframework\bejelentkezes.robot">
-<test id="s1-t1" name="Bejelentkezés érvényes adatokkal" line="7">
+<robot generator="Robot 7.4.1 (Python 3.13.5 on win32)" generated="2026-03-16T09:30:49.762192" rpa="false" schemaversion="5">
+<suite id="s1" name="Robotframework" source="C:\Users\PalmaiJanos\Documents\GitHub\robotframework">
+<suite id="s1-s1" name="Bejelentkezes" source="C:\Users\PalmaiJanos\Documents\GitHub\robotframework\bejelentkezes.robot">
+<test id="s1-s1-t1" name="Bejelentkezés érvényes adatokkal" line="7">
 <kw name="Open Browser And Load Page" owner="common" type="SETUP">
 <kw name="Open Browser" owner="SeleniumLibrary">
-<msg time="2026-03-16T09:27:49.019176" level="INFO">Opening browser 'chrome' to base url 'https://demo.testim.io'.</msg>
+<msg time="2026-03-16T09:30:50.046666" level="INFO">Opening browser 'chrome' to base url 'https://demo.testim.io'.</msg>
 <arg>${URL}</arg>
 <arg>${BROWSER}</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="PASS" start="2026-03-16T09:27:49.018801" elapsed="1.140747"/>
+<status status="PASS" start="2026-03-16T09:30:50.046293" elapsed="1.283546"/>
 </kw>
 <kw name="Maximize Browser Window" owner="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" start="2026-03-16T09:27:50.159834" elapsed="0.034954"/>
+<status status="PASS" start="2026-03-16T09:30:51.330135" elapsed="0.028970"/>
 </kw>
 <kw name="Wait Until Page Contains" owner="SeleniumLibrary">
 <arg>Space &amp; Beyond</arg>
 <arg>10s</arg>
 <doc>Waits until ``text`` appears on the current page.</doc>
-<status status="PASS" start="2026-03-16T09:27:50.195043" elapsed="0.036774"/>
+<status status="PASS" start="2026-03-16T09:30:51.359353" elapsed="0.015152"/>
 </kw>
-<status status="PASS" start="2026-03-16T09:27:49.017914" elapsed="1.214112"/>
+<status status="PASS" start="2026-03-16T09:30:50.045339" elapsed="1.329471"/>
 </kw>
 <kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
-<msg time="2026-03-16T09:27:51.763453" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: Message: no such window: target window already closed
-from unknown error: web view not found
-  (Session info: chrome=146.0.7680.80)
-Stacktrace:
-	chromedriver!GetHandleVerifier [0x7ff7625210a5+14cc5]
-	chromedriver!GetHandleVerifier [0x7ff762521110+14d30]
-	chromedriver!(No symbol) [0x7ff76228db6d]
-	chromedriver!(No symbol) [0x7ff762264352]
-	chromedriver!(No symbol) [0x7ff762317256]
-	chromedriver!(No symbol) [0x7ff762333862]
-	chromedriver!(No symbol) [0x7ff7622d96e8]
-	chromedriver!(No symbol) [0x7ff7622da5d3]
-	chromedriver!GetHandleVerifier [0x7ff762825ddd+3199fd]
-	chromedriver!GetHandleVerifier [0x7ff7628204bd+3140dd]
-	chromedriver!GetHandleVerifier [0x7ff7628429ba+3365da]
-	chromedriver!GetHandleVerifier [0x7ff76253ca45+30665]
-	chromedriver!GetHandleVerifier [0x7ff762545b9c+397bc]
-	chromedriver!GetHandleVerifier [0x7ff76252a4c4+1e0e4]
-	chromedriver!GetHandleVerifier [0x7ff76252a676+1e296]
-	chromedriver!GetHandleVerifier [0x7ff76250ef87+2ba7]
-	KERNEL32!BaseThreadInitThunk [0x7ff9635ce8d7+17]
-	ntdll!RtlUserThreadStart [0x7ff9652bc34c+2c]
-</msg>
-<msg time="2026-03-16T09:27:51.783789" level="FAIL">NoSuchWindowException: Message: no such window: target window already closed
-from unknown error: web view not found
-  (Session info: chrome=146.0.7680.80)
-Stacktrace:
-	chromedriver!GetHandleVerifier [0x7ff7625210a5+14cc5]
-	chromedriver!GetHandleVerifier [0x7ff762521110+14d30]
-	chromedriver!(No symbol) [0x7ff76228db6d]
-	chromedriver!(No symbol) [0x7ff762264352]
-	chromedriver!(No symbol) [0x7ff762317256]
-	chromedriver!(No symbol) [0x7ff762333862]
-	chromedriver!(No symbol) [0x7ff7622d96e8]
-	chromedriver!(No symbol) [0x7ff7622da5d3]
-	chromedriver!GetHandleVerifier [0x7ff762825ddd+3199fd]
-	chromedriver!GetHandleVerifier [0x7ff7628204bd+3140dd]
-	chromedriver!GetHandleVerifier [0x7ff7628429ba+3365da]
-	chromedriver!GetHandleVerifier [0x7ff76253ca45+30665]
-	chromedriver!GetHandleVerifier [0x7ff762545b9c+397bc]
-	chromedriver!GetHandleVerifier [0x7ff76252a4c4+1e0e4]
-	chromedriver!GetHandleVerifier [0x7ff76252a676+1e296]
-	chromedriver!GetHandleVerifier [0x7ff76250ef87+2ba7]
-	KERNEL32!BaseThreadInitThunk [0x7ff9635ce8d7+17]
-	ntdll!RtlUserThreadStart [0x7ff9652bc34c+2c]
-</msg>
+<msg time="2026-03-16T09:31:01.754811" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-8.png"&gt;&lt;img src="selenium-screenshot-8.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2026-03-16T09:31:01.755206" level="FAIL">Element '//button[contains(text(), 'Login')]' not visible after 10 seconds.</msg>
 <arg>//button[contains(text(), 'Login')]</arg>
 <arg>10s</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="FAIL" start="2026-03-16T09:27:50.232451" elapsed="1.562220">NoSuchWindowException: Message: no such window: target window already closed
-from unknown error: web view not found
-  (Session info: chrome=146.0.7680.80)
-Stacktrace:
-	chromedriver!GetHandleVerifier [0x7ff7625210a5+14cc5]
-	chromedriver!GetHandleVerifier [0x7ff762521110+14d30]
-	chromedriver!(No symbol) [0x7ff76228db6d]
-	chromedriver!(No symbol) [0x7ff762264352]
-	chromedriver!(No symbol) [0x7ff762317256]
-	chromedriver!(No symbol) [0x7ff762333862]
-	chromedriver!(No symbol) [0x7ff7622d96e8]
-	chromedriver!(No symbol) [0x7ff7622da5d3]
-	chromedriver!GetHandleVerifier [0x7ff762825ddd+3199fd]
-	chromedriver!GetHandleVerifier [0x7ff7628204bd+3140dd]
-	chromedriver!GetHandleVerifier [0x7ff7628429ba+3365da]
-	chromedriver!GetHandleVerifier [0x7ff76253ca45+30665]
-	chromedriver!GetHandleVerifier [0x7ff762545b9c+397bc]
-	chromedriver!GetHandleVerifier [0x7ff76252a4c4+1e0e4]
-	chromedriver!GetHandleVerifier [0x7ff76252a676+1e296]
-	chromedriver!GetHandleVerifier [0x7ff76250ef87+2ba7]
-	KERNEL32!BaseThreadInitThunk [0x7ff9635ce8d7+17]
-	ntdll!RtlUserThreadStart [0x7ff9652bc34c+2c]
-</status>
+<status status="FAIL" start="2026-03-16T09:30:51.375631" elapsed="10.385156">Element '//button[contains(text(), 'Login')]' not visible after 10 seconds.</status>
 </kw>
 <kw name="Click Button" owner="SeleniumLibrary">
 <arg>//button[contains(text(), 'Login')]</arg>
 <doc>Clicks the button identified by ``locator``.</doc>
-<status status="NOT RUN" start="2026-03-16T09:27:51.795151" elapsed="0.000205"/>
+<status status="NOT RUN" start="2026-03-16T09:31:01.761153" elapsed="0.000133"/>
 </kw>
 <kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
 <arg>//input[@type='email']</arg>
 <arg>5s</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="NOT RUN" start="2026-03-16T09:27:51.795665" elapsed="0.000166"/>
+<status status="NOT RUN" start="2026-03-16T09:31:01.761528" elapsed="0.000112"/>
 </kw>
 <kw name="Input Text" owner="SeleniumLibrary">
 <arg>//input[@type='email']</arg>
 <arg>${VALID_EMAIL}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="NOT RUN" start="2026-03-16T09:27:51.796121" elapsed="0.000156"/>
+<status status="NOT RUN" start="2026-03-16T09:31:01.761869" elapsed="0.000111"/>
 </kw>
 <kw name="Input Text" owner="SeleniumLibrary">
 <arg>//input[@type='password']</arg>
 <arg>${VALID_PASS}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="NOT RUN" start="2026-03-16T09:27:51.796568" elapsed="0.000158"/>
+<status status="NOT RUN" start="2026-03-16T09:31:01.762209" elapsed="0.000108"/>
 </kw>
 <kw name="Click Button" owner="SeleniumLibrary">
 <arg>//button[@type='submit']</arg>
 <doc>Clicks the button identified by ``locator``.</doc>
-<status status="NOT RUN" start="2026-03-16T09:27:51.797008" elapsed="0.000157"/>
+<status status="NOT RUN" start="2026-03-16T09:31:01.762541" elapsed="0.000108"/>
 </kw>
 <kw name="Wait Until Page Contains" owner="SeleniumLibrary">
 <arg>Dashboard</arg>
 <arg>10s</arg>
 <doc>Waits until ``text`` appears on the current page.</doc>
-<status status="NOT RUN" start="2026-03-16T09:27:51.797445" elapsed="0.000153"/>
+<status status="NOT RUN" start="2026-03-16T09:31:01.762877" elapsed="0.000110"/>
 </kw>
 <kw name="Page Should Contain" owner="SeleniumLibrary">
 <arg>Welcome</arg>
 <doc>Verifies that current page contains ``text``.</doc>
-<status status="NOT RUN" start="2026-03-16T09:27:51.797878" elapsed="0.000152"/>
+<status status="NOT RUN" start="2026-03-16T09:31:01.763213" elapsed="0.000113"/>
 </kw>
 <kw name="Close Browser" owner="SeleniumLibrary" type="TEARDOWN">
 <doc>Closes the current browser.</doc>
-<status status="PASS" start="2026-03-16T09:27:51.798486" elapsed="2.074782"/>
+<status status="PASS" start="2026-03-16T09:31:01.763815" elapsed="2.202649"/>
 </kw>
-<status status="FAIL" start="2026-03-16T09:27:49.014883" elapsed="4.859744">NoSuchWindowException: Message: no such window: target window already closed
-from unknown error: web view not found
-  (Session info: chrome=146.0.7680.80)
-Stacktrace:
-	chromedriver!GetHandleVerifier [0x7ff7625210a5+14cc5]
-	chromedriver!GetHandleVerifier [0x7ff762521110+14d30]
-	chromedriver!(No symbol) [0x7ff76228db6d]
-	chromedriver!(No symbol) [0x7ff762264352]
-	chromedriver!(No symbol) [0x7ff762317256]
-	chromedriver!(No symbol) [0x7ff762333862]
-	chromedriver!(No symbol) [0x7ff7622d96e8]
-	chromedriver!(No symbol) [0x7ff7622da5d3]
-	chromedriver!GetHandleVerifier [0x7ff762825ddd+3199fd]
-	chromedriver!GetHandleVerifier [0x7ff7628204bd+3140dd]
-	chromedriver!GetHandleVerifier [0x7ff7628429ba+3365da]
-	chromedriver!GetHandleVerifier [0x7ff76253ca45+30665]
-	chromedriver!GetHandleVerifier [0x7ff762545b9c+397bc]
-	chromedriver!GetHandleVerifier [0x7ff76252a4c4+1e0e4]
-	chromedriver!GetHandleVerifier [0x7ff76252a676+1e296]
-	chromedriver!GetHandleVerifier [0x7ff76250ef87+2ba7]
-	KERNEL32!BaseThreadInitThunk [0x7ff9635ce8d7+17]
-	ntdll!RtlUserThreadStart [0x7ff9652bc34c+2c]
-</status>
+<status status="FAIL" start="2026-03-16T09:30:50.042225" elapsed="13.925371">Element '//button[contains(text(), 'Login')]' not visible after 10 seconds.</status>
 </test>
-<test id="s1-t2" name="Bejelentkezés érvénytelen adatokkal" line="17">
+<test id="s1-s1-t2" name="Bejelentkezés érvénytelen adatokkal" line="17">
 <kw name="Open Browser And Load Page" owner="common" type="SETUP">
 <kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2026-03-16T09:31:03.992570" level="INFO">Opening browser 'chrome' to base url 'https://demo.testim.io'.</msg>
 <arg>${URL}</arg>
 <arg>${BROWSER}</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="FAIL" start="2026-03-16T09:27:53.896600" elapsed="0.000344">Execution terminated by signal</status>
+<status status="PASS" start="2026-03-16T09:31:03.992282" elapsed="1.193084"/>
 </kw>
 <kw name="Maximize Browser Window" owner="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="NOT RUN" start="2026-03-16T09:27:53.897139" elapsed="0.000124"/>
+<status status="PASS" start="2026-03-16T09:31:05.185615" elapsed="0.037139"/>
 </kw>
 <kw name="Wait Until Page Contains" owner="SeleniumLibrary">
 <arg>Space &amp; Beyond</arg>
 <arg>10s</arg>
 <doc>Waits until ``text`` appears on the current page.</doc>
-<status status="NOT RUN" start="2026-03-16T09:27:53.897409" elapsed="0.000116"/>
+<status status="PASS" start="2026-03-16T09:31:05.223014" elapsed="0.020692"/>
 </kw>
-<status status="FAIL" start="2026-03-16T09:27:53.896155" elapsed="0.001565">Execution terminated by signal</status>
+<status status="PASS" start="2026-03-16T09:31:03.991771" elapsed="1.252260"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<msg time="2026-03-16T09:31:15.667634" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-9.png"&gt;&lt;img src="selenium-screenshot-9.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2026-03-16T09:31:15.667929" level="FAIL">Element '//button[contains(text(), 'Login')]' not visible after 10 seconds.</msg>
+<arg>//button[contains(text(), 'Login')]</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="FAIL" start="2026-03-16T09:31:05.244586" elapsed="10.427964">Element '//button[contains(text(), 'Login')]' not visible after 10 seconds.</status>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<arg>//button[contains(text(), 'Login')]</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="NOT RUN" start="2026-03-16T09:31:15.672922" elapsed="0.000139"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>//input[@type='email']</arg>
+<arg>5s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="NOT RUN" start="2026-03-16T09:31:15.673320" elapsed="0.000108"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<arg>//input[@type='email']</arg>
+<arg>${INVALID_EMAIL}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" start="2026-03-16T09:31:15.673664" elapsed="0.000104"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<arg>//input[@type='password']</arg>
+<arg>${INVALID_PASS}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" start="2026-03-16T09:31:15.674001" elapsed="0.000104"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<arg>//button[@type='submit']</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="NOT RUN" start="2026-03-16T09:31:15.674339" elapsed="0.000103"/>
+</kw>
+<kw name="Wait Until Page Contains Element" owner="SeleniumLibrary">
+<arg>//div[contains(@class, 'error')]</arg>
+<arg>5s</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="NOT RUN" start="2026-03-16T09:31:15.674672" elapsed="0.000103"/>
+</kw>
+<kw name="Page Should Contain" owner="SeleniumLibrary">
+<arg>Invalid email or password</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<status status="NOT RUN" start="2026-03-16T09:31:15.675007" elapsed="0.000102"/>
 </kw>
 <kw name="Close Browser" owner="SeleniumLibrary" type="TEARDOWN">
 <doc>Closes the current browser.</doc>
-<status status="PASS" start="2026-03-16T09:27:53.898222" elapsed="0.000248"/>
+<status status="PASS" start="2026-03-16T09:31:15.675612" elapsed="2.164256"/>
 </kw>
-<status status="FAIL" start="2026-03-16T09:27:53.886349" elapsed="0.012318">Setup failed:
-Execution terminated by signal</status>
+<status status="FAIL" start="2026-03-16T09:31:03.980740" elapsed="13.860149">Element '//button[contains(text(), 'Login')]' not visible after 10 seconds.</status>
 </test>
-<test id="s1-t3" name="Üres mezők ellenőrzése" line="27">
-<tag>robot:exit</tag>
-<status status="FAIL" start="2026-03-16T09:27:53.902544" elapsed="0.003436">Test execution stopped due to a fatal error.</status>
+<test id="s1-s1-t3" name="Üres mezők ellenőrzése" line="27">
+<kw name="Open Browser And Load Page" owner="common" type="SETUP">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2026-03-16T09:31:17.863080" level="INFO">Opening browser 'chrome' to base url 'https://demo.testim.io'.</msg>
+<arg>${URL}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2026-03-16T09:31:17.862677" elapsed="1.184223"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2026-03-16T09:31:19.047135" elapsed="0.026368"/>
+</kw>
+<kw name="Wait Until Page Contains" owner="SeleniumLibrary">
+<arg>Space &amp; Beyond</arg>
+<arg>10s</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" start="2026-03-16T09:31:19.073870" elapsed="0.013499"/>
+</kw>
+<status status="PASS" start="2026-03-16T09:31:17.862264" elapsed="1.225295"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<msg time="2026-03-16T09:31:29.536006" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-10.png"&gt;&lt;img src="selenium-screenshot-10.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2026-03-16T09:31:29.536291" level="FAIL">Element '//button[contains(text(), 'Login')]' not visible after 10 seconds.</msg>
+<arg>//button[contains(text(), 'Login')]</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="FAIL" start="2026-03-16T09:31:19.088246" elapsed="10.452534">Element '//button[contains(text(), 'Login')]' not visible after 10 seconds.</status>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<arg>//button[contains(text(), 'Login')]</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="NOT RUN" start="2026-03-16T09:31:29.541158" elapsed="0.000135"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>//input[@type='email']</arg>
+<arg>5s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="NOT RUN" start="2026-03-16T09:31:29.541555" elapsed="0.000114"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<arg>//input[@type='email']</arg>
+<arg>${EMPTY}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" start="2026-03-16T09:31:29.541924" elapsed="0.000107"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<arg>//input[@type='password']</arg>
+<arg>${EMPTY}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" start="2026-03-16T09:31:29.542279" elapsed="0.000107"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<arg>//button[@type='submit']</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="NOT RUN" start="2026-03-16T09:31:29.542632" elapsed="0.000106"/>
+</kw>
+<kw name="Wait Until Page Contains Element" owner="SeleniumLibrary">
+<arg>//div[contains(@class, 'error')]</arg>
+<arg>5s</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="NOT RUN" start="2026-03-16T09:31:29.542986" elapsed="0.000106"/>
+</kw>
+<kw name="Page Should Contain" owner="SeleniumLibrary">
+<arg>Email is required</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<status status="NOT RUN" start="2026-03-16T09:31:29.543337" elapsed="0.000105"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary" type="TEARDOWN">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2026-03-16T09:31:29.543976" elapsed="2.164538"/>
+</kw>
+<status status="FAIL" start="2026-03-16T09:31:17.853816" elapsed="13.855026">Element '//button[contains(text(), 'Login')]' not visible after 10 seconds.</status>
 </test>
-<test id="s1-t4" name="Kijelentkezés" line="37">
-<tag>robot:exit</tag>
-<status status="FAIL" start="2026-03-16T09:27:53.910347" elapsed="0.007367">Test execution stopped due to a fatal error.</status>
+<test id="s1-s1-t4" name="Kijelentkezés" line="37">
+<kw name="Open Browser And Load Page" owner="common" type="SETUP">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2026-03-16T09:31:31.716880" level="INFO">Opening browser 'chrome' to base url 'https://demo.testim.io'.</msg>
+<arg>${URL}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2026-03-16T09:31:31.716553" elapsed="1.177595"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2026-03-16T09:31:32.894388" elapsed="0.028837"/>
+</kw>
+<kw name="Wait Until Page Contains" owner="SeleniumLibrary">
+<arg>Space &amp; Beyond</arg>
+<arg>10s</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" start="2026-03-16T09:31:32.923446" elapsed="0.014785"/>
+</kw>
+<status status="PASS" start="2026-03-16T09:31:31.716122" elapsed="1.222281"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<msg time="2026-03-16T09:31:43.416397" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-11.png"&gt;&lt;img src="selenium-screenshot-11.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2026-03-16T09:31:43.416681" level="FAIL">Element '//button[contains(text(), 'Login')]' not visible after 10 seconds.</msg>
+<arg>//button[contains(text(), 'Login')]</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="FAIL" start="2026-03-16T09:31:32.938975" elapsed="10.482077">Element '//button[contains(text(), 'Login')]' not visible after 10 seconds.</status>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<arg>//button[contains(text(), 'Login')]</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="NOT RUN" start="2026-03-16T09:31:43.421442" elapsed="0.000170"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>//input[@type='email']</arg>
+<arg>5s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="NOT RUN" start="2026-03-16T09:31:43.421893" elapsed="0.000118"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<arg>//input[@type='email']</arg>
+<arg>${VALID_EMAIL}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" start="2026-03-16T09:31:43.422267" elapsed="0.000109"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<arg>//input[@type='password']</arg>
+<arg>${VALID_PASS}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" start="2026-03-16T09:31:43.422640" elapsed="0.000109"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<arg>//button[@type='submit']</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="NOT RUN" start="2026-03-16T09:31:43.422996" elapsed="0.000106"/>
+</kw>
+<kw name="Wait Until Page Contains" owner="SeleniumLibrary">
+<arg>Dashboard</arg>
+<arg>10s</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="NOT RUN" start="2026-03-16T09:31:43.423349" elapsed="0.000116"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>//button[contains(text(), 'Logout')]</arg>
+<arg>5s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="NOT RUN" start="2026-03-16T09:31:43.423736" elapsed="0.000110"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<arg>//button[contains(text(), 'Logout')]</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="NOT RUN" start="2026-03-16T09:31:43.424306" elapsed="0.000103"/>
+</kw>
+<kw name="Wait Until Page Contains" owner="SeleniumLibrary">
+<arg>Space &amp; Beyond</arg>
+<arg>5s</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="NOT RUN" start="2026-03-16T09:31:43.424653" elapsed="0.000111"/>
+</kw>
+<kw name="Page Should Contain Element" owner="SeleniumLibrary">
+<arg>//button[contains(text(), 'Login')]</arg>
+<doc>Verifies that element ``locator`` is found on the current page.</doc>
+<status status="NOT RUN" start="2026-03-16T09:31:43.425013" elapsed="0.000194"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary" type="TEARDOWN">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2026-03-16T09:31:43.425553" elapsed="2.145092"/>
+</kw>
+<status status="FAIL" start="2026-03-16T09:31:31.712861" elapsed="13.858812">Element '//button[contains(text(), 'Login')]' not visible after 10 seconds.</status>
 </test>
-<status status="FAIL" start="2026-03-16T09:27:48.736654" elapsed="5.184327"/>
+<status status="FAIL" start="2026-03-16T09:30:49.804265" elapsed="55.774568"/>
+</suite>
+<suite id="s1-s2" name="Navigacio" source="C:\Users\PalmaiJanos\Documents\GitHub\robotframework\navigacio.robot">
+<test id="s1-s2-t1" name="Főoldal betöltése" line="7">
+<kw name="Open Browser And Load Page" owner="common" type="SETUP">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2026-03-16T09:31:45.608791" level="INFO">Opening browser 'chrome' to base url 'https://demo.testim.io'.</msg>
+<arg>${URL}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2026-03-16T09:31:45.608222" elapsed="1.239650"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2026-03-16T09:31:46.848254" elapsed="0.023993"/>
+</kw>
+<kw name="Wait Until Page Contains" owner="SeleniumLibrary">
+<arg>Space &amp; Beyond</arg>
+<arg>10s</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" start="2026-03-16T09:31:46.872629" elapsed="0.014486"/>
+</kw>
+<status status="PASS" start="2026-03-16T09:31:45.607511" elapsed="1.279789"/>
+</kw>
+<kw name="Title Should Be" owner="SeleniumLibrary">
+<msg time="2026-03-16T09:31:46.893331" level="INFO">Page title is 'Space &amp; Beyond | Testim.io demo'.</msg>
+<arg>Space &amp; Beyond | Testim.io demo</arg>
+<doc>Verifies that the current page title equals ``title``.</doc>
+<status status="PASS" start="2026-03-16T09:31:46.887586" elapsed="0.005999"/>
+</kw>
+<kw name="Page Should Contain" owner="SeleniumLibrary">
+<msg time="2026-03-16T09:31:46.931062" level="INFO">Current page contains text 'Space &amp; Beyond'.</msg>
+<arg>Space &amp; Beyond</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<status status="PASS" start="2026-03-16T09:31:46.894012" elapsed="0.037942"/>
+</kw>
+<kw name="Page Should Contain Element" owner="SeleniumLibrary">
+<msg time="2026-03-16T09:31:46.944058" level="INFO">Current page contains element '//h1[contains(text(), 'Space Advisor')]'.</msg>
+<arg>//h1[contains(text(), 'Space Advisor')]</arg>
+<doc>Verifies that element ``locator`` is found on the current page.</doc>
+<status status="PASS" start="2026-03-16T09:31:46.932375" elapsed="0.011992"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary" type="TEARDOWN">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2026-03-16T09:31:46.944872" elapsed="2.142626"/>
+</kw>
+<status status="PASS" start="2026-03-16T09:31:45.598731" elapsed="3.489770"/>
+</test>
+<test id="s1-s2-t2" name="Menü elemek navigációja - Felnőttek száma" line="12">
+<kw name="Open Browser And Load Page" owner="common" type="SETUP">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2026-03-16T09:31:49.111853" level="INFO">Opening browser 'chrome' to base url 'https://demo.testim.io'.</msg>
+<arg>${URL}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2026-03-16T09:31:49.111405" elapsed="1.240513"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2026-03-16T09:31:50.352146" elapsed="0.022097"/>
+</kw>
+<kw name="Wait Until Page Contains" owner="SeleniumLibrary">
+<arg>Space &amp; Beyond</arg>
+<arg>10s</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" start="2026-03-16T09:31:50.374493" elapsed="0.014442"/>
+</kw>
+<status status="PASS" start="2026-03-16T09:31:49.110805" elapsed="1.278578"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<msg time="2026-03-16T09:31:55.767567" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-12.png"&gt;&lt;img src="selenium-screenshot-12.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2026-03-16T09:31:55.767861" level="FAIL">Element '//div[contains(text(), 'Adults')]' not visible after 5 seconds.</msg>
+<arg>//div[contains(text(), 'Adults')]</arg>
+<arg>5s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="FAIL" start="2026-03-16T09:31:50.392713" elapsed="5.382879">Element '//div[contains(text(), 'Adults')]' not visible after 5 seconds.</status>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<arg>//div[contains(text(), 'Adults (18+)')]/following-sibling::div//button[text()='2']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" start="2026-03-16T09:31:55.776093" elapsed="0.000207"/>
+</kw>
+<kw name="Get Text" owner="SeleniumLibrary">
+<var>${selected}</var>
+<arg>//div[contains(text(), 'Adults (18+)')]/following-sibling::div//span[contains(@class, 'selected')]</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<status status="NOT RUN" start="2026-03-16T09:31:55.776647" elapsed="0.000126"/>
+</kw>
+<kw name="Should Be Equal" owner="BuiltIn">
+<arg>${selected}</arg>
+<arg>2</arg>
+<doc>Fails if the given objects are unequal.</doc>
+<status status="NOT RUN" start="2026-03-16T09:31:55.777024" elapsed="0.000122"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary" type="TEARDOWN">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2026-03-16T09:31:55.777473" elapsed="2.155150"/>
+</kw>
+<status status="FAIL" start="2026-03-16T09:31:49.100261" elapsed="8.833383">Element '//div[contains(text(), 'Adults')]' not visible after 5 seconds.</status>
+</test>
+<test id="s1-s2-t3" name="Menü elemek navigációja - Gyerekek száma" line="18">
+<kw name="Open Browser And Load Page" owner="common" type="SETUP">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2026-03-16T09:31:57.957891" level="INFO">Opening browser 'chrome' to base url 'https://demo.testim.io'.</msg>
+<arg>${URL}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2026-03-16T09:31:57.957485" elapsed="1.235106"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2026-03-16T09:31:59.192820" elapsed="0.030536"/>
+</kw>
+<kw name="Wait Until Page Contains" owner="SeleniumLibrary">
+<arg>Space &amp; Beyond</arg>
+<arg>10s</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" start="2026-03-16T09:31:59.223579" elapsed="0.013733"/>
+</kw>
+<status status="PASS" start="2026-03-16T09:31:57.956825" elapsed="1.280679"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<msg time="2026-03-16T09:32:04.618831" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-13.png"&gt;&lt;img src="selenium-screenshot-13.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2026-03-16T09:32:04.619115" level="FAIL">Element '//div[contains(text(), 'Children')]' not visible after 5 seconds.</msg>
+<arg>//div[contains(text(), 'Children')]</arg>
+<arg>5s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="FAIL" start="2026-03-16T09:31:59.237876" elapsed="5.385818">Element '//div[contains(text(), 'Children')]' not visible after 5 seconds.</status>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<arg>//div[contains(text(), 'Children (0-7)')]/following-sibling::div//button[text()='2']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" start="2026-03-16T09:32:04.624085" elapsed="0.000161"/>
+</kw>
+<kw name="Get Text" owner="SeleniumLibrary">
+<var>${selected}</var>
+<arg>//div[contains(text(), 'Children (0-7)')]/following-sibling::div//span[contains(@class, 'selected')]</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<status status="NOT RUN" start="2026-03-16T09:32:04.624549" elapsed="0.000126"/>
+</kw>
+<kw name="Should Be Equal" owner="BuiltIn">
+<arg>${selected}</arg>
+<arg>2</arg>
+<doc>Fails if the given objects are unequal.</doc>
+<status status="NOT RUN" start="2026-03-16T09:32:04.624947" elapsed="0.000115"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary" type="TEARDOWN">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2026-03-16T09:32:04.625412" elapsed="2.153056"/>
+</kw>
+<status status="FAIL" start="2026-03-16T09:31:57.948700" elapsed="8.830783">Element '//div[contains(text(), 'Children')]' not visible after 5 seconds.</status>
+</test>
+<test id="s1-s2-t4" name="Menü elemek navigációja - Bolygó színe" line="24">
+<kw name="Open Browser And Load Page" owner="common" type="SETUP">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2026-03-16T09:32:06.802494" level="INFO">Opening browser 'chrome' to base url 'https://demo.testim.io'.</msg>
+<arg>${URL}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2026-03-16T09:32:06.802110" elapsed="1.179736"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2026-03-16T09:32:07.982200" elapsed="0.023601"/>
+</kw>
+<kw name="Wait Until Page Contains" owner="SeleniumLibrary">
+<arg>Space &amp; Beyond</arg>
+<arg>10s</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" start="2026-03-16T09:32:08.006396" elapsed="0.014122"/>
+</kw>
+<status status="PASS" start="2026-03-16T09:32:06.801672" elapsed="1.219031"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<msg time="2026-03-16T09:32:13.418863" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-14.png"&gt;&lt;img src="selenium-screenshot-14.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2026-03-16T09:32:13.419168" level="FAIL">Element '//div[contains(text(), 'Planet color')]' not visible after 5 seconds.</msg>
+<arg>//div[contains(text(), 'Planet color')]</arg>
+<arg>5s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="FAIL" start="2026-03-16T09:32:08.021043" elapsed="5.402594">Element '//div[contains(text(), 'Planet color')]' not visible after 5 seconds.</status>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<arg>//div[contains(text(), 'Planet color')]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" start="2026-03-16T09:32:13.424024" elapsed="0.000166"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<arg>//div[contains(text(), 'Red')]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" start="2026-03-16T09:32:13.424418" elapsed="0.000120"/>
+</kw>
+<kw name="Wait Until Page Contains Element" owner="SeleniumLibrary">
+<arg>//div[contains(@class, 'destination')][contains(@style, 'red')]</arg>
+<arg>5s</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="NOT RUN" start="2026-03-16T09:32:13.424790" elapsed="0.000114"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary" type="TEARDOWN">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2026-03-16T09:32:13.425231" elapsed="2.146888"/>
+</kw>
+<status status="FAIL" start="2026-03-16T09:32:06.793866" elapsed="8.779288">Element '//div[contains(text(), 'Planet color')]' not visible after 5 seconds.</status>
+</test>
+<test id="s1-s2-t5" name="Vissza gomb működése" line="30">
+<kw name="Open Browser And Load Page" owner="common" type="SETUP">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2026-03-16T09:32:15.598933" level="INFO">Opening browser 'chrome' to base url 'https://demo.testim.io'.</msg>
+<arg>${URL}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2026-03-16T09:32:15.598631" elapsed="1.718692"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2026-03-16T09:32:17.317698" elapsed="0.024990"/>
+</kw>
+<kw name="Wait Until Page Contains" owner="SeleniumLibrary">
+<arg>Space &amp; Beyond</arg>
+<arg>10s</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" start="2026-03-16T09:32:17.342959" elapsed="0.015542"/>
+</kw>
+<status status="PASS" start="2026-03-16T09:32:15.598230" elapsed="1.760448"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2026-03-16T09:32:17.359314" level="INFO">Clicking element '//h5[text()='Madan']'.</msg>
+<arg>//h5[text()='Madan']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2026-03-16T09:32:17.358987" elapsed="0.080042"/>
+</kw>
+<kw name="Wait Until Page Contains Element" owner="SeleniumLibrary">
+<msg time="2026-03-16T09:32:22.783214" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-15.png"&gt;&lt;img src="selenium-screenshot-15.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2026-03-16T09:32:22.783539" level="FAIL">Element '//div[contains(@class, 'modal')]' did not appear in 5 seconds.</msg>
+<arg>//div[contains(@class, 'modal')]</arg>
+<arg>5s</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="FAIL" start="2026-03-16T09:32:17.439452" elapsed="5.348660">Element '//div[contains(@class, 'modal')]' did not appear in 5 seconds.</status>
+</kw>
+<kw name="Page Should Contain" owner="SeleniumLibrary">
+<arg>Madan</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<status status="NOT RUN" start="2026-03-16T09:32:22.788499" elapsed="0.000152"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<arg>//button[contains(text(), 'Close')]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" start="2026-03-16T09:32:22.788956" elapsed="0.000110"/>
+</kw>
+<kw name="Wait Until Page Does Not Contain Element" owner="SeleniumLibrary">
+<arg>//div[contains(@class, 'modal')]</arg>
+<arg>5s</arg>
+<doc>Waits until the element ``locator`` disappears from the current page.</doc>
+<status status="NOT RUN" start="2026-03-16T09:32:22.789300" elapsed="0.000108"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary" type="TEARDOWN">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2026-03-16T09:32:22.789750" elapsed="2.143910"/>
+</kw>
+<status status="FAIL" start="2026-03-16T09:32:15.586817" elapsed="9.347457">Element '//div[contains(@class, 'modal')]' did not appear in 5 seconds.</status>
+</test>
+<status status="FAIL" start="2026-03-16T09:31:45.584149" elapsed="39.358619"/>
+</suite>
+<suite id="s1-s3" name="Termekek" source="C:\Users\PalmaiJanos\Documents\GitHub\robotframework\termekek.robot">
+<test id="s1-s3-t1" name="Termékek listázása" line="7">
+<kw name="Open Browser And Load Page" owner="common" type="SETUP">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2026-03-16T09:32:24.967695" level="INFO">Opening browser 'chrome' to base url 'https://demo.testim.io'.</msg>
+<arg>${URL}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2026-03-16T09:32:24.967333" elapsed="1.719661"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2026-03-16T09:32:26.687220" elapsed="0.038858"/>
+</kw>
+<kw name="Wait Until Page Contains" owner="SeleniumLibrary">
+<arg>Space &amp; Beyond</arg>
+<arg>10s</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" start="2026-03-16T09:32:26.726313" elapsed="0.037777"/>
+</kw>
+<status status="PASS" start="2026-03-16T09:32:24.966787" elapsed="1.797570"/>
+</kw>
+<kw name="Get Element Count" owner="SeleniumLibrary">
+<msg time="2026-03-16T09:32:26.775702" level="INFO">${count} = 6</msg>
+<var>${count}</var>
+<arg>//h5</arg>
+<doc>Returns the number of elements matching ``locator``.</doc>
+<status status="PASS" start="2026-03-16T09:32:26.764747" elapsed="0.011142"/>
+</kw>
+<kw name="Should Be True" owner="BuiltIn">
+<msg time="2026-03-16T09:32:26.777003" level="FAIL">Nem jelenik meg legalább 8 termék</msg>
+<arg>${count} &gt;= 8</arg>
+<arg>Nem jelenik meg legalább 8 termék</arg>
+<doc>Fails if the given condition is not true.</doc>
+<status status="FAIL" start="2026-03-16T09:32:26.776208" elapsed="0.003669">Nem jelenik meg legalább 8 termék</status>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary" type="TEARDOWN">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2026-03-16T09:32:26.780334" elapsed="2.157554"/>
+</kw>
+<status status="FAIL" start="2026-03-16T09:32:24.962666" elapsed="3.976313">Nem jelenik meg legalább 8 termék</status>
+</test>
+<test id="s1-s3-t2" name="Termék szűrése szín alapján" line="11">
+<kw name="Open Browser And Load Page" owner="common" type="SETUP">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2026-03-16T09:32:28.951903" level="INFO">Opening browser 'chrome' to base url 'https://demo.testim.io'.</msg>
+<arg>${URL}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2026-03-16T09:32:28.951503" elapsed="1.148985"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2026-03-16T09:32:30.100708" elapsed="0.023194"/>
+</kw>
+<kw name="Wait Until Page Contains" owner="SeleniumLibrary">
+<arg>Space &amp; Beyond</arg>
+<arg>10s</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" start="2026-03-16T09:32:30.124234" elapsed="0.017224"/>
+</kw>
+<status status="PASS" start="2026-03-16T09:32:28.951096" elapsed="1.191415"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2026-03-16T09:32:30.145386" level="INFO">Clicking element '//div[contains(text(), 'Planet color')]'.</msg>
+<msg time="2026-03-16T09:32:30.597058" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-16.png"&gt;&lt;img src="selenium-screenshot-16.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2026-03-16T09:32:30.597348" level="FAIL">Element with locator '//div[contains(text(), 'Planet color')]' not found.</msg>
+<arg>//div[contains(text(), 'Planet color')]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="FAIL" start="2026-03-16T09:32:30.144396" elapsed="0.457785">Element with locator '//div[contains(text(), 'Planet color')]' not found.</status>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<arg>//div[contains(text(), 'Blue')]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" start="2026-03-16T09:32:30.602563" elapsed="0.000137"/>
+</kw>
+<kw name="Wait Until Page Contains Element" owner="SeleniumLibrary">
+<arg>//div[contains(@class, 'destination')][contains(@style, 'blue')]</arg>
+<arg>5s</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="NOT RUN" start="2026-03-16T09:32:30.602969" elapsed="0.000113"/>
+</kw>
+<kw name="Get Element Count" owner="SeleniumLibrary">
+<var>${blue_count}</var>
+<arg>//div[contains(@class, 'destination')][contains(@style, 'blue')]</arg>
+<doc>Returns the number of elements matching ``locator``.</doc>
+<status status="NOT RUN" start="2026-03-16T09:32:30.603342" elapsed="0.000109"/>
+</kw>
+<kw name="Should Be True" owner="BuiltIn">
+<arg>${blue_count} &gt; 0</arg>
+<doc>Fails if the given condition is not true.</doc>
+<status status="NOT RUN" start="2026-03-16T09:32:30.603707" elapsed="0.000111"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary" type="TEARDOWN">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2026-03-16T09:32:30.604170" elapsed="2.149306"/>
+</kw>
+<status status="FAIL" start="2026-03-16T09:32:28.945808" elapsed="3.808203">Element with locator '//div[contains(text(), 'Planet color')]' not found.</status>
+</test>
+<test id="s1-s3-t3" name="Termék keresése név alapján" line="18">
+<kw name="Open Browser And Load Page" owner="common" type="SETUP">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2026-03-16T09:32:32.771938" level="INFO">Opening browser 'chrome' to base url 'https://demo.testim.io'.</msg>
+<arg>${URL}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2026-03-16T09:32:32.771255" elapsed="1.124376"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2026-03-16T09:32:33.895861" elapsed="0.027968"/>
+</kw>
+<kw name="Wait Until Page Contains" owner="SeleniumLibrary">
+<arg>Space &amp; Beyond</arg>
+<arg>10s</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" start="2026-03-16T09:32:33.924080" elapsed="0.014013"/>
+</kw>
+<status status="PASS" start="2026-03-16T09:32:32.770415" elapsed="1.167864"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2026-03-16T09:32:33.940468" level="INFO">Clicking element '//h5[text()='Madan']'.</msg>
+<arg>//h5[text()='Madan']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2026-03-16T09:32:33.939450" elapsed="0.085839"/>
+</kw>
+<kw name="Wait Until Page Contains Element" owner="SeleniumLibrary">
+<msg time="2026-03-16T09:32:39.541875" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-17.png"&gt;&lt;img src="selenium-screenshot-17.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2026-03-16T09:32:39.542154" level="FAIL">Element '//div[contains(@class, 'modal')]' did not appear in 5 seconds.</msg>
+<arg>//div[contains(@class, 'modal')]</arg>
+<arg>5s</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="FAIL" start="2026-03-16T09:32:34.025915" elapsed="5.520410">Element '//div[contains(@class, 'modal')]' did not appear in 5 seconds.</status>
+</kw>
+<kw name="Page Should Contain" owner="SeleniumLibrary">
+<arg>Madan</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<status status="NOT RUN" start="2026-03-16T09:32:39.546779" elapsed="0.000170"/>
+</kw>
+<kw name="Page Should Contain" owner="SeleniumLibrary">
+<arg>Praesent blandit</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<status status="NOT RUN" start="2026-03-16T09:32:39.547231" elapsed="0.000118"/>
+</kw>
+<kw name="Page Should Contain" owner="SeleniumLibrary">
+<arg>$1183.46</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<status status="NOT RUN" start="2026-03-16T09:32:39.547581" elapsed="0.000108"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary" type="TEARDOWN">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2026-03-16T09:32:39.548005" elapsed="2.163226"/>
+</kw>
+<status status="FAIL" start="2026-03-16T09:32:32.761082" elapsed="8.951165">Element '//div[contains(@class, 'modal')]' did not appear in 5 seconds.</status>
+</test>
+<test id="s1-s3-t4" name="Termék keresése másik név alapján" line="25">
+<kw name="Open Browser And Load Page" owner="common" type="SETUP">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2026-03-16T09:32:41.736198" level="INFO">Opening browser 'chrome' to base url 'https://demo.testim.io'.</msg>
+<arg>${URL}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2026-03-16T09:32:41.735898" elapsed="1.146806"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2026-03-16T09:32:42.882988" elapsed="0.040331"/>
+</kw>
+<kw name="Wait Until Page Contains" owner="SeleniumLibrary">
+<arg>Space &amp; Beyond</arg>
+<arg>10s</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" start="2026-03-16T09:32:42.923751" elapsed="0.017083"/>
+</kw>
+<status status="PASS" start="2026-03-16T09:32:41.735494" elapsed="1.205611"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2026-03-16T09:32:42.943808" level="INFO">Clicking element '//h5[text()='Shenji']'.</msg>
+<arg>//h5[text()='Shenji']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2026-03-16T09:32:42.942945" elapsed="0.082241"/>
+</kw>
+<kw name="Wait Until Page Contains Element" owner="SeleniumLibrary">
+<msg time="2026-03-16T09:32:48.591095" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-18.png"&gt;&lt;img src="selenium-screenshot-18.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2026-03-16T09:32:48.591392" level="FAIL">Element '//div[contains(@class, 'modal')]' did not appear in 5 seconds.</msg>
+<arg>//div[contains(@class, 'modal')]</arg>
+<arg>5s</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="FAIL" start="2026-03-16T09:32:43.025724" elapsed="5.569932">Element '//div[contains(@class, 'modal')]' did not appear in 5 seconds.</status>
+</kw>
+<kw name="Page Should Contain" owner="SeleniumLibrary">
+<arg>Shenji</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<status status="NOT RUN" start="2026-03-16T09:32:48.596044" elapsed="0.000136"/>
+</kw>
+<kw name="Page Should Contain" owner="SeleniumLibrary">
+<arg>Vestibulum quam sapien</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<status status="NOT RUN" start="2026-03-16T09:32:48.596445" elapsed="0.000111"/>
+</kw>
+<kw name="Page Should Contain" owner="SeleniumLibrary">
+<arg>$1089.07</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<status status="NOT RUN" start="2026-03-16T09:32:48.596804" elapsed="0.000106"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary" type="TEARDOWN">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2026-03-16T09:32:48.597248" elapsed="2.137127"/>
+</kw>
+<status status="FAIL" start="2026-03-16T09:32:41.725495" elapsed="9.009899">Element '//div[contains(@class, 'modal')]' did not appear in 5 seconds.</status>
+</test>
+<test id="s1-s3-t5" name="Termék részletek megtekintése" line="32">
+<kw name="Open Browser And Load Page" owner="common" type="SETUP">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2026-03-16T09:32:50.757821" level="INFO">Opening browser 'chrome' to base url 'https://demo.testim.io'.</msg>
+<arg>${URL}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2026-03-16T09:32:50.757481" elapsed="1.118939"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2026-03-16T09:32:51.876716" elapsed="0.030102"/>
+</kw>
+<kw name="Wait Until Page Contains" owner="SeleniumLibrary">
+<arg>Space &amp; Beyond</arg>
+<arg>10s</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" start="2026-03-16T09:32:51.907040" elapsed="0.020620"/>
+</kw>
+<status status="PASS" start="2026-03-16T09:32:50.757009" elapsed="1.170870"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2026-03-16T09:32:51.928661" level="INFO">Clicking element '//h5[text()='Tongli']'.</msg>
+<arg>//h5[text()='Tongli']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2026-03-16T09:32:51.928271" elapsed="0.077635"/>
+</kw>
+<kw name="Wait Until Page Contains Element" owner="SeleniumLibrary">
+<msg time="2026-03-16T09:32:57.575547" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-19.png"&gt;&lt;img src="selenium-screenshot-19.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2026-03-16T09:32:57.575856" level="FAIL">Element '//div[contains(@class, 'modal')]' did not appear in 5 seconds.</msg>
+<arg>//div[contains(@class, 'modal')]</arg>
+<arg>5s</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="FAIL" start="2026-03-16T09:32:52.008042" elapsed="5.572035">Element '//div[contains(@class, 'modal')]' did not appear in 5 seconds.</status>
+</kw>
+<kw name="Page Should Contain" owner="SeleniumLibrary">
+<arg>Tongli</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<status status="NOT RUN" start="2026-03-16T09:32:57.580490" elapsed="0.000150"/>
+</kw>
+<kw name="Page Should Contain" owner="SeleniumLibrary">
+<arg>Phasellus sit amet erat</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<status status="NOT RUN" start="2026-03-16T09:32:57.580885" elapsed="0.000116"/>
+</kw>
+<kw name="Page Should Contain" owner="SeleniumLibrary">
+<arg>$192.64</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<status status="NOT RUN" start="2026-03-16T09:32:57.581232" elapsed="0.000108"/>
+</kw>
+<kw name="Element Should Be Visible" owner="SeleniumLibrary">
+<arg>//img[contains(@src, 'tongli')]</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<status status="NOT RUN" start="2026-03-16T09:32:57.581563" elapsed="0.000107"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<arg>//button[contains(text(), 'Close')]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" start="2026-03-16T09:32:57.581896" elapsed="0.000105"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary" type="TEARDOWN">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2026-03-16T09:32:57.582313" elapsed="2.159861"/>
+</kw>
+<status status="FAIL" start="2026-03-16T09:32:50.748276" elapsed="8.995530">Element '//div[contains(@class, 'modal')]' did not appear in 5 seconds.</status>
+</test>
+<test id="s1-s3-t6" name="Termék részletek - Flagstaff ellenőrzése" line="41">
+<kw name="Open Browser And Load Page" owner="common" type="SETUP">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2026-03-16T09:32:59.765378" level="INFO">Opening browser 'chrome' to base url 'https://demo.testim.io'.</msg>
+<arg>${URL}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2026-03-16T09:32:59.765039" elapsed="1.272111"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2026-03-16T09:33:01.037386" elapsed="0.034894"/>
+</kw>
+<kw name="Wait Until Page Contains" owner="SeleniumLibrary">
+<arg>Space &amp; Beyond</arg>
+<arg>10s</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" start="2026-03-16T09:33:01.072575" elapsed="0.014604"/>
+</kw>
+<status status="PASS" start="2026-03-16T09:32:59.764653" elapsed="1.322721"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2026-03-16T09:33:01.088283" level="INFO">Clicking element '//h5[text()='Flagstaff']'.</msg>
+<arg>//h5[text()='Flagstaff']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2026-03-16T09:33:01.087721" elapsed="0.088197"/>
+</kw>
+<kw name="Wait Until Page Contains Element" owner="SeleniumLibrary">
+<msg time="2026-03-16T09:33:06.422448" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-20.png"&gt;&lt;img src="selenium-screenshot-20.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2026-03-16T09:33:06.422744" level="FAIL">Element '//div[contains(@class, 'modal')]' did not appear in 5 seconds.</msg>
+<arg>//div[contains(@class, 'modal')]</arg>
+<arg>5s</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="FAIL" start="2026-03-16T09:33:01.176387" elapsed="5.250663">Element '//div[contains(@class, 'modal')]' did not appear in 5 seconds.</status>
+</kw>
+<kw name="Page Should Contain" owner="SeleniumLibrary">
+<arg>Flagstaff</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<status status="NOT RUN" start="2026-03-16T09:33:06.427459" elapsed="0.000199"/>
+</kw>
+<kw name="Page Should Contain" owner="SeleniumLibrary">
+<arg>Sed ante</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<status status="NOT RUN" start="2026-03-16T09:33:06.427948" elapsed="0.000114"/>
+</kw>
+<kw name="Page Should Contain" owner="SeleniumLibrary">
+<arg>$346.68</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<status status="NOT RUN" start="2026-03-16T09:33:06.428292" elapsed="0.000108"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<arg>//button[contains(text(), 'Close')]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" start="2026-03-16T09:33:06.428646" elapsed="0.000110"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary" type="TEARDOWN">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2026-03-16T09:33:06.429074" elapsed="2.331114"/>
+</kw>
+<status status="FAIL" start="2026-03-16T09:32:59.757159" elapsed="9.004061">Element '//div[contains(@class, 'modal')]' did not appear in 5 seconds.</status>
+</test>
+<test id="s1-s3-t7" name="Termék részletek - Sant Cugat Del Valles ellenőrzése" line="49">
+<kw name="Open Browser And Load Page" owner="common" type="SETUP">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2026-03-16T09:33:08.785070" level="INFO">Opening browser 'chrome' to base url 'https://demo.testim.io'.</msg>
+<arg>${URL}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2026-03-16T09:33:08.784775" elapsed="1.194867"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2026-03-16T09:33:09.979874" elapsed="0.029752"/>
+</kw>
+<kw name="Wait Until Page Contains" owner="SeleniumLibrary">
+<arg>Space &amp; Beyond</arg>
+<arg>10s</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" start="2026-03-16T09:33:10.009871" elapsed="0.012162"/>
+</kw>
+<status status="PASS" start="2026-03-16T09:33:08.784379" elapsed="1.237917"/>
+</kw>
+<kw name="Scroll Element Into View" owner="SeleniumLibrary">
+<arg>//h5[text()='Sant Cugat Del Valles']</arg>
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<status status="PASS" start="2026-03-16T09:33:10.022652" elapsed="0.302871"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2026-03-16T09:33:10.327289" level="INFO">Clicking element '//h5[text()='Sant Cugat Del Valles']'.</msg>
+<arg>//h5[text()='Sant Cugat Del Valles']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2026-03-16T09:33:10.326442" elapsed="0.077876"/>
+</kw>
+<kw name="Wait Until Page Contains Element" owner="SeleniumLibrary">
+<msg time="2026-03-16T09:33:15.817146" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-21.png"&gt;&lt;img src="selenium-screenshot-21.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2026-03-16T09:33:15.817450" level="FAIL">Element '//div[contains(@class, 'modal')]' did not appear in 5 seconds.</msg>
+<arg>//div[contains(@class, 'modal')]</arg>
+<arg>5s</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="FAIL" start="2026-03-16T09:33:10.404673" elapsed="5.417193">Element '//div[contains(@class, 'modal')]' did not appear in 5 seconds.</status>
+</kw>
+<kw name="Page Should Contain" owner="SeleniumLibrary">
+<arg>Sant Cugat Del Valles</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<status status="NOT RUN" start="2026-03-16T09:33:15.822268" elapsed="0.000142"/>
+</kw>
+<kw name="Page Should Contain" owner="SeleniumLibrary">
+<arg>Duis aliquam convallis nunc</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<status status="NOT RUN" start="2026-03-16T09:33:15.822670" elapsed="0.000111"/>
+</kw>
+<kw name="Page Should Contain" owner="SeleniumLibrary">
+<arg>$1243.73</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<status status="NOT RUN" start="2026-03-16T09:33:15.823034" elapsed="0.000107"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<arg>//button[contains(text(), 'Close')]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" start="2026-03-16T09:33:15.823389" elapsed="0.000106"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary" type="TEARDOWN">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2026-03-16T09:33:15.823836" elapsed="2.143294"/>
+</kw>
+<status status="FAIL" start="2026-03-16T09:33:08.773835" elapsed="9.194949">Element '//div[contains(@class, 'modal')]' did not appear in 5 seconds.</status>
+</test>
+<test id="s1-s3-t8" name="Termék részletek - Shaheying ellenőrzése" line="58">
+<kw name="Open Browser And Load Page" owner="common" type="SETUP">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2026-03-16T09:33:18.003191" level="INFO">Opening browser 'chrome' to base url 'https://demo.testim.io'.</msg>
+<arg>${URL}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2026-03-16T09:33:18.002740" elapsed="1.112853"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2026-03-16T09:33:19.115833" elapsed="0.037549"/>
+</kw>
+<kw name="Wait Until Page Contains" owner="SeleniumLibrary">
+<arg>Space &amp; Beyond</arg>
+<arg>10s</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" start="2026-03-16T09:33:19.153612" elapsed="0.014884"/>
+</kw>
+<status status="PASS" start="2026-03-16T09:33:18.002006" elapsed="1.166683"/>
+</kw>
+<kw name="Scroll Element Into View" owner="SeleniumLibrary">
+<arg>//h5[text()='Shaheying']</arg>
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<status status="PASS" start="2026-03-16T09:33:19.169037" elapsed="0.303358"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2026-03-16T09:33:19.473115" level="INFO">Clicking element '//h5[text()='Shaheying']'.</msg>
+<arg>//h5[text()='Shaheying']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2026-03-16T09:33:19.472779" elapsed="0.062249"/>
+</kw>
+<kw name="Wait Until Page Contains Element" owner="SeleniumLibrary">
+<msg time="2026-03-16T09:33:24.804002" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-22.png"&gt;&lt;img src="selenium-screenshot-22.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2026-03-16T09:33:24.804392" level="FAIL">Element '//div[contains(@class, 'modal')]' did not appear in 5 seconds.</msg>
+<arg>//div[contains(@class, 'modal')]</arg>
+<arg>5s</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="FAIL" start="2026-03-16T09:33:19.535347" elapsed="5.273350">Element '//div[contains(@class, 'modal')]' did not appear in 5 seconds.</status>
+</kw>
+<kw name="Page Should Contain" owner="SeleniumLibrary">
+<arg>Shaheying</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<status status="NOT RUN" start="2026-03-16T09:33:24.809103" elapsed="0.000147"/>
+</kw>
+<kw name="Page Should Contain" owner="SeleniumLibrary">
+<arg>Integer tincidunt ante vel ipsum</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<status status="NOT RUN" start="2026-03-16T09:33:24.809552" elapsed="0.000113"/>
+</kw>
+<kw name="Page Should Contain" owner="SeleniumLibrary">
+<arg>$215.38</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<status status="NOT RUN" start="2026-03-16T09:33:24.809919" elapsed="0.000202"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<arg>//button[contains(text(), 'Close')]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" start="2026-03-16T09:33:24.810378" elapsed="0.000109"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary" type="TEARDOWN">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2026-03-16T09:33:24.810835" elapsed="2.145215"/>
+</kw>
+<status status="FAIL" start="2026-03-16T09:33:17.984976" elapsed="8.972789">Element '//div[contains(@class, 'modal')]' did not appear in 5 seconds.</status>
+</test>
+<status status="FAIL" start="2026-03-16T09:32:24.952014" elapsed="62.017786"/>
+</suite>
+<status status="FAIL" start="2026-03-16T09:30:49.767339" elapsed="157.206451"/>
 </suite>
 <statistics>
 <total>
-<stat pass="0" fail="4" skip="0">All Tests</stat>
+<stat pass="1" fail="16" skip="0">All Tests</stat>
 </total>
 <tag>
-<stat info="combined" combined="NOT robot:exit" pass="0" fail="2" skip="0">NOT robot:exit</stat>
 </tag>
 <suite>
-<stat name="Bejelentkezes" id="s1" pass="0" fail="4" skip="0">Bejelentkezes</stat>
+<stat name="Robotframework" id="s1" pass="1" fail="16" skip="0">Robotframework</stat>
+<stat name="Bejelentkezes" id="s1-s1" pass="0" fail="4" skip="0">Robotframework.Bejelentkezes</stat>
+<stat name="Navigacio" id="s1-s2" pass="1" fail="4" skip="0">Robotframework.Navigacio</stat>
+<stat name="Termekek" id="s1-s3" pass="0" fail="8" skip="0">Robotframework.Termekek</stat>
 </suite>
 </statistics>
 <errors>
-<msg time="2026-03-16T09:27:51.763453" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: Message: no such window: target window already closed
-from unknown error: web view not found
-  (Session info: chrome=146.0.7680.80)
-Stacktrace:
-	chromedriver!GetHandleVerifier [0x7ff7625210a5+14cc5]
-	chromedriver!GetHandleVerifier [0x7ff762521110+14d30]
-	chromedriver!(No symbol) [0x7ff76228db6d]
-	chromedriver!(No symbol) [0x7ff762264352]
-	chromedriver!(No symbol) [0x7ff762317256]
-	chromedriver!(No symbol) [0x7ff762333862]
-	chromedriver!(No symbol) [0x7ff7622d96e8]
-	chromedriver!(No symbol) [0x7ff7622da5d3]
-	chromedriver!GetHandleVerifier [0x7ff762825ddd+3199fd]
-	chromedriver!GetHandleVerifier [0x7ff7628204bd+3140dd]
-	chromedriver!GetHandleVerifier [0x7ff7628429ba+3365da]
-	chromedriver!GetHandleVerifier [0x7ff76253ca45+30665]
-	chromedriver!GetHandleVerifier [0x7ff762545b9c+397bc]
-	chromedriver!GetHandleVerifier [0x7ff76252a4c4+1e0e4]
-	chromedriver!GetHandleVerifier [0x7ff76252a676+1e296]
-	chromedriver!GetHandleVerifier [0x7ff76250ef87+2ba7]
-	KERNEL32!BaseThreadInitThunk [0x7ff9635ce8d7+17]
-	ntdll!RtlUserThreadStart [0x7ff9652bc34c+2c]
-</msg>
 </errors>
 </robot>

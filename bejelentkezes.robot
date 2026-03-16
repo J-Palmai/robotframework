@@ -42,5 +42,13 @@ Kijelentkezés
 
 *** Keywords ***
 Bejelentkezés érvényes adatokkal
-    # TODO: implement keyword "Bejelentkezés érvényes adatokkal".
-    Fail    Not Implemented
+    Wait Until Element Is Visible    //button[contains(text(), 'Login')]    10s
+    Click Button    //button[contains(text(), 'Login')]
+    Wait Until Element Is Visible    //input[@type='email']    5s
+    Input Text    //input[@type='email']    ${VALID_EMAIL}
+    Input Text    //input[@type='password']    ${VALID_PASS}
+    Click Button    //button[@type='submit']
+    Wait Until Page Contains    Dashboard    10s
+    Page Should Contain    Welcome
+
+
